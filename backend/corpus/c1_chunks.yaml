@@ -1,0 +1,437 @@
+# C1 Pedagogical Corpus — 15 chunks
+# Format: one pedagogical unit per chunk (~150-250 tokens)
+# Each chunk is the RAG retrieval unit for C1 learners.
+
+chunks:
+
+  - id: c1_001
+    cefr_level: C1
+    skill: grammar
+    topic: inversion_for_emphasis
+    content: |
+      Inversion — placing the auxiliary verb before the subject — creates emphasis and is common in formal written English and advanced speech.
+
+      Inversion with negative adverbials at the start of a sentence:
+      • Never have I seen such dedication. (= I have never seen…)
+      • Rarely does she make mistakes. (= She rarely makes mistakes.)
+      • Seldom had the committee reached such a swift decision.
+      • Not once did he apologise for his behaviour.
+      • No sooner had we arrived than it started to rain. (Note: "than", not "when")
+      • Hardly / Scarcely had she sat down when the alarm rang.
+
+      Inversion with "only":
+      • Only after the investigation was the truth revealed.
+      • Only when you understand the problem can you solve it.
+      • Only then did I realise what had happened.
+
+      Inversion after "so…that":
+      • So complex was the problem that it took three days to resolve.
+
+      Note: inversion applies to auxiliary verbs (have, do, be, will, can…), not main verbs.
+      Wrong: *Never I have seen → Never have I seen.
+    common_errors:
+      - "Omitting auxiliary in inversion: *Rarely she makes → Rarely does she make"
+      - "Applying inversion to main verb: *Never I saw → Never have I seen"
+      - "Using 'when' instead of 'than' after 'No sooner': *No sooner…when → No sooner…than"
+
+  - id: c1_002
+    cefr_level: C1
+    skill: grammar
+    topic: cleft_sentences
+    content: |
+      Cleft sentences divide one clause into two for emphasis. There are two main types.
+
+      It-cleft: "It is/was + focused element + that/who…"
+      • Neutral: "Einstein developed the theory of relativity."
+      • It-cleft (emphasising person): "It was Einstein who developed the theory of relativity."
+      • It-cleft (emphasising discovery): "It was the theory of relativity that Einstein developed."
+
+      Wh-cleft (Pseudo-cleft): "What + clause + is/was + focused element"
+      • "What surprised me most was his complete lack of remorse."
+      • "What the committee needs is a clear strategy."
+      • "What he did was (to) resign without giving notice."
+
+      All-cleft: "All + clause + is/was…"
+      • "All I want is a cup of tea." (emphatic minimisation)
+
+      Reverse pseudo-cleft: "The thing that matters is…"
+      • "The problem is that nobody informed the manager."
+
+      Cleft sentences are particularly common in formal writing, academic prose, and presentations to foreground information the writer considers most important.
+    common_errors:
+      - "Using 'which' instead of 'that' in it-cleft: *It was Einstein which → It was Einstein who / that"
+      - "Wrong verb agreement in pseudo-cleft: *What I need are → What I need is"
+      - "Confusing cleft with relative clause structure"
+
+  - id: c1_003
+    cefr_level: C1
+    skill: grammar
+    topic: advanced_conditionals
+    content: |
+      Beyond the standard zero, first, second, and third conditionals, C1 learners need to master mixed, inverted, and implied conditionals.
+
+      Mixed conditionals (past condition, present result):
+      "If I had studied medicine, I would be a doctor now."
+      (If + past perfect → would + bare infinitive)
+
+      Mixed conditionals (present condition, past result):
+      "If he weren't so arrogant, he would have got the job."
+      (If + past simple → would have + past participle)
+
+      Inverted conditionals (formal, no "if"):
+      • Had I known → If I had known: "Had I known earlier, I would have called."
+      • Were it not for → If it were not for: "Were it not for her support, I would have failed."
+      • Should you need → If you should need: "Should you need assistance, contact reception."
+
+      Implied conditionals (no if-clause):
+      "A different approach might have yielded better results." (= If they had used a different approach…)
+      "Told the truth, he would have been forgiven." (= If he had been told the truth…)
+    common_errors:
+      - "Mixing tenses in mixed conditionals: *If I had studied, I would be been → I would be"
+      - "Using 'would' in the if-clause: *If I would have known → If I had known"
+      - "Not inverting correctly: *Had I known it → Had I known (no 'it' needed)"
+
+  - id: c1_004
+    cefr_level: C1
+    skill: vocabulary
+    topic: hedging_language
+    content: |
+      Hedging language qualifies claims, shows epistemic caution, and signals academic register. It is essential in C1 writing and speech.
+
+      Modal hedges:
+      • may / might / could: "This may suggest that…" / "The results could indicate…"
+      • would: "This would imply a systematic failure."
+      • should (deduction): "The data should reveal a pattern."
+
+      Verb hedges:
+      • seem, appear, tend, suggest: "The evidence appears to support this hypothesis."
+      • It seems that… / It appears that… / It would seem that…
+
+      Adverb hedges:
+      • apparently, seemingly, presumably, arguably, perhaps, possibly, probably
+      • "The policy arguably failed due to poor implementation."
+      • "Presumably, further research will clarify this."
+
+      Noun/adjective hedges:
+      • a tendency to… / a degree of… / to some extent…
+      • "There is a tendency for learners to overgeneralise grammar rules."
+
+      Attribution hedges:
+      • According to X… / As X argues… / X (2020) suggests that…
+
+      Over-hedging is as problematic as under-hedging. Target one hedge per key claim.
+    common_errors:
+      - "Over-stacking hedges: *It might possibly perhaps suggest → It might suggest"
+      - "Using 'surely' as hedge (it expresses certainty, not doubt)"
+      - "Confusing 'apparently' (based on appearance) and 'evidently' (clearly shown by evidence)"
+
+  - id: c1_005
+    cefr_level: C1
+    skill: vocabulary
+    topic: nominalisation
+    content: |
+      Nominalisation — converting verbs and adjectives into nouns — creates formal, dense academic and professional prose.
+
+      Verb → Noun conversions:
+      • decide → decision / investigate → investigation / develop → development
+      • analyse → analysis / apply → application / contribute → contribution
+      • achieve → achievement / improve → improvement / assess → assessment
+
+      Adjective → Noun conversions:
+      • significant → significance / different → difference / relevant → relevance
+      • accurate → accuracy / possible → possibility / available → availability
+
+      Compare informal and formal:
+      • "We analysed the data." → "Analysis of the data was conducted."
+      • "The government decided to…" → "The government's decision to…"
+      • "Costs increased significantly." → "There was a significant increase in costs."
+
+      When to use nominalisation:
+      ✓ Academic writing, reports, formal correspondence.
+      ✗ Overuse creates impenetrable prose — balance with active verbs in persuasive and journalistic writing.
+    common_errors:
+      - "Wrong suffix: *the analyse → the analysis; *the develop → the development"
+      - "Nominalising where a verb is clearer: excessive nominalisation obscures meaning"
+      - "Missing article before nominalised phrase: *Analysis of data shows → The analysis of the data shows"
+
+  - id: c1_006
+    cefr_level: C1
+    skill: grammar
+    topic: participle_clauses
+    content: |
+      Participle clauses condense two clauses into one and are characteristic of advanced formal writing.
+
+      Present participle (-ing): simultaneous action or cause
+      • "Realising his mistake, he apologised immediately." (= Because he realised…)
+      • "Walking along the river, she noticed something unusual."
+
+      Past participle (-ed): passive or completed action
+      • "Exhausted by the journey, he went straight to bed." (= Because he was exhausted…)
+      • "Badly damaged in the storm, the building had to be demolished."
+      • "Given the evidence, the committee had no choice but to act."
+
+      Perfect participle (having + past participle): action completed before main clause
+      • "Having submitted her thesis, she celebrated with friends."
+      • "Having been warned of the risks, investors proceeded cautiously."
+
+      Key rule: the subject of the participle clause MUST be the same as the subject of the main clause. Violating this creates a "dangling participle".
+      Wrong: *"Driving along the motorway, the rain began." (the rain was not driving)
+      Right: "Driving along the motorway, I noticed the rain begin."
+    common_errors:
+      - "Dangling participle — subject mismatch: *Having read the report, the policy was changed"
+      - "Using 'having been + -ing': not a standard form; use 'having + past participle'"
+      - "Confusion with relative clauses: participle clause has no relative pronoun"
+
+  - id: c1_007
+    cefr_level: C1
+    skill: writing
+    topic: cohesion_and_coherence
+    content: |
+      Cohesion is the grammatical and lexical linking of sentences. Coherence is logical progression of ideas. Both are essential for C1+ writing.
+
+      Cohesive devices:
+
+      Reference: pronouns and determiners point back (anaphora) or forward (cataphora).
+      • "The policy failed. It was implemented without consultation." ('It' refers back to 'the policy')
+
+      Substitution: replacing a word/phrase to avoid repetition.
+      • "Some economists support austerity. Others do not." ('others' substitutes 'some economists')
+
+      Ellipsis: omitting a predictable element.
+      • "She can play the piano and (she can play) the violin."
+
+      Conjunction — logical connectors:
+      • Addition: furthermore, moreover, in addition, also
+      • Contrast: however, nevertheless, nonetheless, on the other hand, by contrast
+      • Cause/result: consequently, therefore, thus, hence, as a result
+      • Concession: although, even though, despite (+ noun), in spite of (+ noun)
+      • Exemplification: for instance, for example, such as, namely
+
+      Lexical cohesion — repetition, synonyms, antonyms, collocation, superordinate terms.
+    common_errors:
+      - "Overusing 'however' — reserve for genuine contrast; use 'in addition' for additive links"
+      - "Confusing 'despite' + noun and 'although' + clause: *Despite it was cold → Despite the cold / Although it was cold"
+      - "Using 'thus' in informal contexts — it belongs to formal/academic registers"
+
+  - id: c1_008
+    cefr_level: C1
+    skill: vocabulary
+    topic: connotation_register_precision
+    content: |
+      At C1 level, precision in word choice — including connotation and register — distinguishes fluent from proficient users.
+
+      Connotation: the emotional or evaluative meaning beyond dictionary definition.
+      • "slender" (positive) vs "thin" (neutral) vs "scrawny" (negative) — all describe someone of low body weight.
+      • "determined" (positive) vs "stubborn" (negative) — similar denotation, opposite connotation.
+      • "frugal" (positive economy) vs "miserly" (negative hoarding).
+
+      Register: the appropriate level of formality for the context.
+      Informal → Neutral → Formal:
+      • "get better" → "recover" → "recuperate"
+      • "look into" → "examine" → "scrutinise"
+      • "show" → "indicate" → "demonstrate" → "evince"
+      • "use" → "employ" → "utilise" (note: 'utilise' implies making use of something not originally intended for the purpose)
+
+      Precision verbs for academic writing:
+      argue, assert, claim, contend, propose, suggest, hypothesise — each has distinct epistemic force.
+      • "suggest" (tentative) < "argue" (supported) < "assert" / "contend" (strong position)
+    common_errors:
+      - "Using 'utilise' as a formal synonym for 'use' — it carries a specific nuance of adaptation"
+      - "Mixing registers: formal vocabulary in an informal email reads as pompous"
+      - "Ignoring connotation: 'cheap' and 'affordable' are not synonyms in all contexts"
+
+  - id: c1_009
+    cefr_level: C1
+    skill: grammar
+    topic: subjunctive_mood
+    content: |
+      The subjunctive mood expresses wishes, hypothetical situations, recommendations, and demands. It is more prevalent in formal and American English than in informal British English.
+
+      Mandative subjunctive (after verbs of demanding, recommending, insisting):
+      Structure: that + subject + base verb (no -s, no auxiliary)
+      • "The committee recommends that the policy be reviewed immediately."
+      • "It is essential that every candidate submit their documents by Friday."
+      • "The judge insisted that the witness tell the whole truth."
+      Common trigger verbs: recommend, suggest, insist, demand, require, propose, request, urge
+
+      Fixed expressions with subjunctive (formulaic):
+      • "If need be…" / "Be that as it may…" / "So be it." / "Come what may."
+      • "Were I in your position, I would reconsider." (inverted subjunctive of 'be')
+
+      Wish + subjunctive:
+      • "I wish I were taller." (not 'was' in formal English — were is the subjunctive form for all persons)
+      • "She wishes she had more time." (past subjunctive for present wish)
+    common_errors:
+      - "Using indicative instead of subjunctive: *It is essential that he submits → he submit"
+      - "Using 'was' instead of 'were' after wish: *I wish I was → I wish I were (formal)"
+      - "Confusing mandative subjunctive with that-clause + should: both are correct but 'should' is more British"
+
+  - id: c1_010
+    cefr_level: C1
+    skill: writing
+    topic: academic_argument_structure
+    content: |
+      Structuring an academic argument requires a clear position, evidence, analysis, and acknowledgement of counter-arguments.
+
+      PEEL paragraph structure:
+      • Point: state the main idea of the paragraph clearly.
+      • Evidence: provide data, quotation, example, or reference.
+      • Explanation/Analysis: explain how the evidence supports your point.
+      • Link: connect back to the thesis or transition to the next paragraph.
+
+      Signposting a counter-argument:
+      "Critics might argue that… / Some scholars contend that… / It could be objected that…"
+      Then refute or concede: "However, this view overlooks… / While this is partly true, it fails to account for…"
+
+      Thesis statement characteristics:
+      ✓ Specific and arguable (not merely descriptive)
+      ✓ Addresses the question directly
+      ✓ Signals the structure of the argument
+      Example: "Although remote work increases individual productivity, its long-term effects on organisational culture and employee wellbeing present significant management challenges that require proactive policy responses."
+    common_errors:
+      - "Starting paragraphs with evidence before stating the point"
+      - "Treating counter-argument as concession without refutation"
+      - "Thesis too vague: *'This essay will discuss remote work.' → make a specific, arguable claim"
+
+  - id: c1_011
+    cefr_level: C1
+    skill: vocabulary
+    topic: phrasal_verbs_formal_equivalents
+    content: |
+      At C1 level, learners must control both phrasal verbs and their formal synonyms, using each in the appropriate register.
+
+      Phrasal verb → Formal equivalent:
+      • carry out → conduct, execute, implement
+      • look into → investigate, examine, scrutinise
+      • put forward → propose, submit, advance (an argument)
+      • come up with → devise, formulate, generate
+      • point out → indicate, highlight, draw attention to
+      • set up → establish, found, create
+      • find out → discover, ascertain, determine
+      • deal with → address, handle, manage, tackle
+      • go over → review, examine, revise
+      • bring about → cause, precipitate, trigger, lead to
+
+      Separable vs inseparable phrasal verbs:
+      • Separable: "look up the word" / "look the word up" ✓ / "look it up" ✓ (pronoun must go in the middle)
+      • Inseparable: "look after the children" ✓ / *"look the children after" ✗
+    common_errors:
+      - "Putting pronoun after inseparable phrasal verb: *look after them → look after them (correct), but with separable: *look up it → look it up"
+      - "Overusing formal equivalents in informal contexts: using 'ascertain' in casual speech"
+      - "Omitting the particle: *I need to look the problem → look into the problem"
+
+  - id: c1_012
+    cefr_level: C1
+    skill: grammar
+    topic: reported_speech_advanced
+    content: |
+      Advanced reported speech involves changes to tense (backshift), pronouns, time/place references, and a range of reporting verbs with different syntactic patterns.
+
+      Backshift (when the reporting verb is past):
+      Direct: "I am working on it."
+      Reported: He said he was working on it. (am → was)
+      Direct: "We will submit it tomorrow."
+      Reported: They told us they would submit it the following day.
+
+      No backshift when the situation is still true:
+      "He said the earth orbits the sun." (not: orbited — a permanent fact)
+
+      Reporting verbs — syntactic patterns:
+      • verb + to-infinitive: agree, refuse, promise, offer, threaten
+        "She agreed to review the document."
+      • verb + object + to-infinitive: ask, tell, advise, encourage, warn, persuade
+        "He warned her not to sign anything."
+      • verb + -ing: admit, deny, suggest, recommend, regret, propose
+        "They denied stealing the data."
+      • verb + that-clause: claim, argue, assert, explain, insist, add
+        "She argued that the decision was premature."
+    common_errors:
+      - "Backshifting a permanent truth: *He explained that water had been composed of H₂O → is composed"
+      - "Wrong pattern: *She suggested to go → She suggested going / She suggested that we go"
+      - "Confusing 'say' and 'tell': tell requires an object — *He told that → He told us that"
+
+  - id: c1_013
+    cefr_level: C1
+    skill: vocabulary
+    topic: discourse_markers_spoken
+    content: |
+      C1 speakers use discourse markers fluently to organise speech, manage interaction, and signal attitude.
+
+      Organising speech:
+      • "To begin with… / First and foremost… / Moving on to… / In terms of… / As far as X is concerned…"
+      • "What I mean is… / What I'm trying to say is…" (reformulation)
+      • "To put it another way… / In other words…" (paraphrase)
+
+      Signalling stance and attitude:
+      • "Frankly… / To be honest… / If you ask me…" (personal opinion)
+      • "Interestingly… / Remarkably… / Surprisingly…" (highlighting)
+      • "Admittedly… / Granted… / To be fair…" (concession)
+
+      Managing interaction:
+      • "As I was saying… / Where were we? / Going back to what you said…"
+      • "Would you mind if I just…? / If I can just add…" (turn-claiming)
+      • "Sorry to interrupt, but… / Can I just come in here?" (interrupting politely)
+
+      Fillers at C1 (minimal; overuse lowers perceived fluency):
+      "Well…" / "You know…" / "I mean…" — use purposefully to signal hesitation or reformulation, not as nervous habit.
+    common_errors:
+      - "Misusing 'frankly' — it signals honest directness, not vagueness"
+      - "Overusing 'actually' as a filler — it means 'in fact/in reality' and can sound contradictory"
+      - "Using 'besides' to mean 'next to': 'besides' = 'in addition to'; 'beside' = 'next to'"
+
+  - id: c1_014
+    cefr_level: C1
+    skill: reading
+    topic: implication_inference
+    content: |
+      At C1 level, readers interpret implicit meaning — what is suggested but not directly stated — through tone, word choice, context, and logical inference.
+
+      Types of implication:
+      1. Lexical implication: word choice implies evaluation.
+         "The politician claimed the policy was a success." ('claimed' implies the speaker is sceptical.)
+         Compare: "confirmed", "stated", "admitted", "insisted" — each positions the information differently.
+
+      2. Presupposition: information taken for granted in a statement.
+         "When did you stop making these errors?" (presupposes errors were made)
+         "Even she managed to pass." (presupposes the task was difficult)
+
+      3. Conversational implicature (Grice's maxims): what is communicated beyond what is literally said.
+         Q: "Is the food good here?" A: "The décor is beautiful." → implies the food is NOT good (violates maxim of relevance to communicate meaning).
+
+      4. Irony and understatement:
+         "The presentation was not without its moments." (= it had significant problems)
+         "Not bad." (in some contexts = very good)
+    common_errors:
+      - "Taking all statements at face value without attending to reporting verbs"
+      - "Missing understatement — particularly common in British English"
+      - "Confusing implicature with direct statement"
+
+  - id: c1_015
+    cefr_level: C1
+    skill: vocabulary
+    topic: collocations_advanced
+    content: |
+      Advanced collocations — fixed or semi-fixed word partnerships — give C1 writing and speech its natural fluency.
+
+      Verb + noun collocations (academic/professional):
+      • raise awareness / raise concerns / raise questions / raise objections
+      • draw conclusions / draw distinctions / draw comparisons / draw attention to
+      • conduct research / conduct an interview / conduct an investigation
+      • reach a consensus / reach a decision / reach a compromise / reach a conclusion
+      • make concessions / make allowances / make an exception / make inroads into
+
+      Adjective + noun collocations:
+      • far-reaching implications / widespread concern / sweeping reforms
+      • mounting pressure / growing tension / prevailing view
+      • stark contrast / marked improvement / sharp decline / modest increase
+
+      Adverb + adjective collocations:
+      • deeply flawed / wholly inadequate / fundamentally mistaken
+      • increasingly complex / remarkably resilient / broadly consistent with
+
+      Prepositional phrase collocations:
+      • in light of / on the grounds that / with a view to / for the sake of / in the wake of / at the expense of
+    common_errors:
+      - "Non-collocational verb choice: *do research → conduct research (in formal contexts)"
+      - "Overusing 'big' as a modifier: *big problem → significant/major/pressing problem"
+      - "Using 'make' where 'reach' collocates: *make a conclusion → reach a conclusion"

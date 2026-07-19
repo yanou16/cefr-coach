@@ -1,0 +1,497 @@
+# B1 Pedagogical Corpus — 15 chunks
+# Core TOEIC candidate level. Focus on grammar precision + productive vocabulary.
+
+chunks:
+
+  - id: b1_001
+    cefr_level: B1
+    skill: grammar
+    topic: present_perfect_vs_past_simple
+    content: |
+      The present perfect (have/has + past participle) and the simple past are often confused.
+
+      USE PRESENT PERFECT when:
+      • The action happened at an unspecified time and is relevant NOW:
+        "I have visited Paris." (experience — when? not important)
+      • The action is recent and has a present result:
+        "I have lost my keys." (I can't open the door now)
+      • With time expressions: just, already, yet, ever, never, recently, so far, this week/month/year
+        "Have you eaten yet?" / "She has just arrived."
+
+      USE SIMPLE PAST when:
+      • The time is specified (yesterday, last week, in 2020, when I was young):
+        "I visited Paris in 2019."
+      • The action is clearly finished with no present connection:
+        "Shakespeare wrote Hamlet."
+
+      KEY TEST: If you can answer "When?" → use simple past.
+      If "When?" doesn't matter or isn't known → use present perfect.
+
+      "I have seen that film." (experience) ≠ "I saw that film last Tuesday." (specific)
+    common_errors:
+      - "Using present perfect with specific time: *I have visited Paris in 2019 → I visited Paris in 2019"
+      - "Using simple past for unspecified time: *Did you ever travel abroad? → Have you ever travelled abroad?"
+      - "Confusing past participle with simple past: *I have went → I have gone"
+
+  - id: b1_002
+    cefr_level: B1
+    skill: grammar
+    topic: passive_voice_basic
+    content: |
+      The passive voice shifts focus from who does the action to what receives the action.
+
+      FORM: be (in the correct tense) + past participle
+
+      Tense examples:
+      • Present simple: "English is spoken in many countries."
+      • Past simple: "The window was broken last night."
+      • Present continuous: "The road is being repaired."
+      • Present perfect: "The letter has been sent."
+      • Future: "The results will be announced tomorrow."
+      • Modal: "This problem can be solved easily."
+
+      WHEN to use passive:
+      1. The agent (doer) is unknown: "My car was stolen."
+      2. The agent is obvious: "The suspect was arrested." (by the police — obvious)
+      3. You want to emphasise the action, not the doer (scientific, formal writing):
+         "The data were collected over six months."
+
+      BY + AGENT: include only when the agent is important or surprising.
+      "The Eiffel Tower was designed by Gustave Eiffel." ✓
+      "Dinner was cooked by someone." ✗ (unnecessary)
+    common_errors:
+      - "Wrong form of 'be': *The letter was send → was sent"
+      - "Using active auxiliary: *The car was stolen by someone stole it"
+      - "Forgetting to change tense of 'be': *It is broke last year → It was broken last year"
+
+  - id: b1_003
+    cefr_level: B1
+    skill: grammar
+    topic: first_conditional
+    content: |
+      The first conditional expresses real, possible future conditions and their results.
+
+      FORM: If + present simple, will + base verb
+
+      The 'if' clause states the condition.
+      The main clause states the result.
+
+      Examples:
+      "If it rains tomorrow, I will stay at home."
+      "If you study hard, you will pass the exam."
+      "I will call you if I need help."
+
+      Note: The clauses can appear in either order.
+      When the 'if' clause comes first, use a comma.
+      When the main clause comes first, no comma.
+
+      Variations:
+      • Unless = if not: "Unless you hurry, you will miss the bus." = "If you don't hurry..."
+      • Can/may/might instead of will: "If you practise, you might improve faster."
+      • Imperative in the main clause: "If you need help, ask me."
+
+      Common scenario — TOEIC Part 5/6: choosing the correct tense in conditional sentences.
+      Remember: NEVER use 'will' in the 'if' clause of a first conditional.
+    common_errors:
+      - "Using will in the if-clause: *If it will rain → If it rains"
+      - "Using would instead of will: *If I study, I would pass → I will pass"
+      - "Missing comma when if-clause comes first: *If it rains I will stay"
+
+  - id: b1_004
+    cefr_level: B1
+    skill: grammar
+    topic: relative_clauses
+    content: |
+      Relative clauses give more information about a noun. They follow the noun directly.
+
+      DEFINING relative clauses (no commas) — identify which person/thing:
+      • WHO — for people: "The woman who called you is my teacher."
+      • WHICH — for things/animals: "The book which I bought is excellent."
+      • THAT — for people or things (informal): "The film that I saw was boring."
+      • WHERE — for places: "The city where I was born is Algiers."
+      • WHEN — for times: "I remember the day when we first met."
+      • WHOSE — for possession: "I know a man whose son is a doctor."
+
+      OMITTING the relative pronoun:
+      When the relative pronoun is the OBJECT of the clause, it can be omitted:
+      "The book (that/which) I bought is excellent." ✓
+      When it is the SUBJECT, it cannot be omitted:
+      "The woman who called you..." — 'who' cannot be removed.
+
+      NON-DEFINING relative clauses (with commas) — add extra, non-essential information:
+      "My sister, who lives in Paris, is a doctor."
+      Note: THAT cannot be used in non-defining clauses.
+    common_errors:
+      - "Using 'which' for people: *The man which helped me → who/that"
+      - "Using 'what' as a relative pronoun: *The thing what I need → that/which"
+      - "Using 'that' in non-defining clauses: *My sister, that lives in Paris (invalid)"
+
+  - id: b1_005
+    cefr_level: B1
+    skill: grammar
+    topic: reported_speech_statements
+    content: |
+      Reported speech conveys what someone said without quoting their exact words.
+
+      TENSE BACKSHIFT (when the reporting verb is past):
+      • Present simple → Past simple: "I am tired." → She said she was tired.
+      • Present continuous → Past continuous: "I am working." → He said he was working.
+      • Present perfect → Past perfect: "I have finished." → She said she had finished.
+      • Past simple → Past perfect: "I went." → He said he had gone.
+      • Will → Would: "I will call." → She said she would call.
+      • Can → Could: "I can help." → He said he could help.
+
+      PRONOUN CHANGES:
+      "I" → he/she | "my" → his/her | "we" → they | "you" → I/he/she (context-dependent)
+
+      TIME EXPRESSION CHANGES:
+      now → then | today → that day | yesterday → the day before
+      tomorrow → the day after / the following day | here → there
+
+      Example:
+      Direct: "I am leaving tomorrow," she said.
+      Reported: She said she was leaving the following day.
+
+      Note: No tense backshift needed if the reporting verb is present, or if the fact is still true.
+    common_errors:
+      - "Keeping direct speech word order: *She said that she is tired → was tired"
+      - "Forgetting pronoun changes: *He said 'I will come' → He said he would come (not 'I')"
+      - "Using 'said to' with the wrong structure: *She said to that → She told him that"
+
+  - id: b1_006
+    cefr_level: B1
+    skill: grammar
+    topic: modals_deduction_possibility
+    content: |
+      Modals of deduction express how certain you are about something.
+
+      PRESENT DEDUCTION (about now):
+      • MUST — strong certainty (positive): "He must be tired. He worked all day."
+      • CAN'T / CANNOT — strong certainty (negative): "She can't be at home. I saw her leave."
+      • MIGHT / MAY / COULD — possibility (50% or less): "He might be in a meeting."
+
+      PAST DEDUCTION (about a past situation) — use modal + have + past participle:
+      • MUST HAVE + pp: "She must have missed the bus. She's very late."
+      • CAN'T HAVE + pp: "He can't have seen her. He was abroad."
+      • MIGHT/MAY/COULD HAVE + pp: "They might have forgotten about the meeting."
+
+      Key distinction:
+      MUST (deduction) ≠ MUST (obligation)
+      "You must study." = obligation (I am telling you to)
+      "She must be studying." = deduction (I am concluding that she is)
+
+      Tip for TOEIC: modal + have + past participle is very common in Part 5 questions.
+    common_errors:
+      - "Using 'must not' for deduction: *He must not be here → He can't be here"
+      - "Missing 'have' in past deduction: *She must arrived → She must have arrived"
+      - "Using 'should' for deduction: *He should be tired → He must be tired (stronger certainty)"
+
+  - id: b1_007
+    cefr_level: B1
+    skill: grammar
+    topic: gerunds_and_infinitives
+    content: |
+      Some verbs are followed by a gerund (verb + -ing), some by an infinitive (to + verb).
+
+      VERBS FOLLOWED BY GERUND (-ing):
+      enjoy, finish, avoid, consider, keep, practise, suggest, recommend, mind, admit, deny
+      "I enjoy reading in English." / "She finished writing the report."
+
+      VERBS FOLLOWED BY INFINITIVE (to + base):
+      want, decide, plan, hope, expect, agree, refuse, manage, promise, need, offer, afford
+      "I want to improve my English." / "She decided to study abroad."
+
+      VERBS FOLLOWED BY EITHER (meaning may change):
+      • REMEMBER: remember + gerund = memory of past action
+        "I remember meeting her at the conference." (I have a memory of it)
+        remember + infinitive = remember to do something in the future
+        "Remember to send the email." (don't forget)
+      • STOP: stop + gerund = quit the activity
+        "He stopped smoking." (he no longer smokes)
+        stop + infinitive = pause in order to do something else
+        "He stopped to smoke." (he paused what he was doing, in order to smoke)
+      • TRY: try + gerund = experiment with something
+        try + infinitive = make an effort to achieve something
+    common_errors:
+      - "Using infinitive after enjoy: *I enjoy to read → I enjoy reading"
+      - "Using gerund after want: *I want going → I want to go"
+      - "Using base form after preposition: *interested in learn → interested in learning"
+
+  - id: b1_008
+    cefr_level: B1
+    skill: vocabulary
+    topic: discourse_connectors_b1
+    content: |
+      Connectors make writing and speech more cohesive. B1 learners should master these.
+
+      ADDING INFORMATION:
+      • In addition (to this), / Furthermore, / Moreover, (more formal)
+        "Learning English takes time. In addition, it requires consistent practice."
+      • Also (mid-sentence): "This method is also very effective."
+
+      CONTRAST:
+      • However, (start of sentence): "The exam is difficult. However, I feel prepared."
+      • Although / Even though + clause: "Although I was tired, I continued studying."
+      • Despite / In spite of + noun/-ing: "Despite the difficulties, she passed."
+      • On the other hand,: introduces an opposing view.
+
+      REASON AND RESULT:
+      • Because + clause | Because of + noun: "Because of the traffic, I was late."
+      • Therefore, / As a result, / Consequently, (formal result)
+        "I missed the train. As a result, I was late for the interview."
+      • So (informal): "I was tired, so I went to bed early."
+
+      SEQUENCE:
+      • First, / Then, / After that, / Finally,
+      • To begin with, ... After that, ... Lastly,
+    common_errors:
+      - "Using 'despite' + clause: *Despite I was tired → Despite being tired / Despite my tiredness"
+      - "Using 'although' + noun: *Although the rain → Although it was raining / Despite the rain"
+      - "Comma splice without connector: *I was tired, I went to bed → I was tired, so I went to bed"
+
+  - id: b1_009
+    cefr_level: B1
+    skill: vocabulary
+    topic: collocations_work
+    content: |
+      Collocations are words that naturally go together. Learning them is key for TOEIC.
+
+      WORK COLLOCATIONS:
+
+      Apply for a job / a position / a scholarship
+      Get / find / look for a job
+      Offer someone a job | Accept / turn down a job offer
+      Lose your job | Resign from a job | Retire (from a job)
+
+      Do / carry out research | Do overtime | Do a task
+      Make a decision | Make progress | Make a profit / a loss
+      Run a company / a business / a meeting
+      Hold a meeting | Attend a meeting | Chair a meeting
+
+      Deadline collocations:
+      Meet a deadline | Miss a deadline | Set a deadline | Extend a deadline
+
+      Salary collocations:
+      Earn a salary | Receive a bonus | Get a promotion | Ask for a pay rise
+
+      Common TOEIC vocabulary pairs:
+      • submit a report (not "give a report")
+      • conduct an interview (not "make an interview")
+      • place an order (not "do an order")
+      • reach an agreement (not "do an agreement")
+    common_errors:
+      - "do a decision → make a decision"
+      - "do a research → do research (no article) or conduct research"
+      - "pass an exam vs fail an exam (not 'miss an exam' for a test you took)"
+
+  - id: b1_010
+    cefr_level: B1
+    skill: vocabulary
+    topic: expressing_opinions
+    content: |
+      Expressing opinions clearly and with appropriate hedging is key at B1 and above.
+
+      STATING AN OPINION:
+      • In my opinion, / In my view, / From my point of view,
+      • I think / I believe / I feel (that) + clause
+      • As far as I am concerned,
+      • To my mind,
+
+      AGREEING:
+      • I agree (with you). / I totally agree.
+      • That is a good point. / Absolutely.
+      • I think you are right.
+
+      DISAGREEING POLITELY:
+      • I am not sure I agree with that.
+      • I see your point, but...
+      • Actually, I think... / With respect, I disagree because...
+
+      HEDGING (expressing uncertainty / softening):
+      • I think... (softer than "I know")
+      • It seems to me that...
+      • Perhaps / Maybe...
+      • It might be the case that...
+
+      GIVING REASONS:
+      • This is because... / The reason is (that)...
+      • For example, / For instance,
+      • Such as... / Like...
+
+      Tip: In TOEIC writing (Part 1 — Respond to a Written Request), always give at least one reason.
+    common_errors:
+      - "According to me → In my opinion (avoid 'according to me' — it sounds unnatural)"
+      - "I am agree → I agree (no 'am' with agree)"
+      - "In my opinion, I think → choose one opener, not both"
+
+  - id: b1_011
+    cefr_level: B1
+    skill: vocabulary
+    topic: phrasal_verbs_essential
+    content: |
+      Phrasal verbs (verb + particle) are extremely common in spoken and written English.
+      TOEIC tests phrasal verbs frequently in reading and listening.
+
+      HIGH-FREQUENCY PHRASAL VERBS FOR B1:
+
+      Work-related:
+      • carry out = do/perform: "We will carry out an inspection next week."
+      • put off = postpone: "The meeting was put off until Friday."
+      • come up with = think of: "She came up with a great idea."
+      • deal with = handle: "Can you deal with this complaint?"
+      • look into = investigate: "We are looking into the problem."
+      • set up = establish: "They set up a new company last year."
+      • take over = take control of: "The manager took over the department."
+
+      Communication:
+      • get back to = reply/return contact: "I will get back to you by tomorrow."
+      • bring up = mention: "She brought up an important issue."
+      • go over = review: "Let us go over the key points."
+      • find out = discover: "Did you find out the answer?"
+
+      Tip: When a phrasal verb is separable (take + object + over OR take over + object),
+      you MUST separate it when the object is a pronoun:
+      "Take it over." NOT "Take over it." ✗
+    common_errors:
+      - "Separating inseparable phrasal verbs: *look the word up for → look up the word (separable) vs look into it (inseparable)"
+      - "Literal interpretation: 'carry out a task' does not mean physically carrying something"
+      - "Wrong particle: *deal about → deal with | *look at the problem → look into the problem"
+
+  - id: b1_012
+    cefr_level: B1
+    skill: reading
+    topic: toeic_reading_strategies_part5
+    content: |
+      TOEIC Part 5 — Incomplete Sentences (30 questions)
+
+      Strategy: You have about 30 seconds per question. Be systematic.
+
+      STEP 1 — Look at the answer choices first.
+      Identify the question type from the options:
+      • Same word, different form (work/works/working/worked) → GRAMMAR question (tense/form)
+      • Different words, similar meaning → VOCABULARY question
+      • Prepositions (in/on/at/for) → PREPOSITION question
+
+      STEP 2 — Read the sentence, focus on the blank's context.
+
+      COMMON GRAMMAR QUESTION TYPES:
+      • Verb tense: look at time markers (yesterday, since, by next week)
+      • Active vs passive: does the subject perform or receive the action?
+      • Gerund vs infinitive: what does the preceding verb take?
+      • Subject-verb agreement: singular or plural subject?
+      • Part of speech: is a noun, verb, adjective, or adverb needed? (position in sentence)
+
+      STEP 3 — Eliminate wrong answers, then choose.
+
+      TIME-SAVING TIP: If you are unsure, mark and move on.
+      Never spend more than 45 seconds on a single question.
+
+      KEY VOCABULARY FOR TOEIC PART 5:
+      Words that often appear: provided that, as long as, unless, in order to, due to, prior to,
+      in accordance with, on behalf of, regardless of.
+    common_errors:
+      - "Reading the full sentence before looking at options — wastes time"
+      - "Ignoring time markers when choosing a tense"
+      - "Confusing adjective and adverb position: *a quick spoke person → a quick-spoken person"
+
+  - id: b1_013
+    cefr_level: B1
+    skill: listening
+    topic: toeic_listening_part3
+    content: |
+      TOEIC Part 3 — Conversations (13 sets of 3 questions each = 39 questions)
+
+      Each set has: a short conversation between 2-3 people → 3 questions with 4 answer options.
+
+      BEFORE YOU LISTEN (during the 8-second pause):
+      • Read all 3 questions quickly.
+      • Identify the question type (What, Where, Why, Who, When, What will they do next?).
+      • Predict the topic from the questions.
+
+      WHILE LISTENING:
+      • Listen for the answers to your pre-read questions — they come in order.
+      • Watch for traps: wrong answers often use words from the conversation in a misleading way.
+      • Listen for the FIRST and LAST lines — they often contain the key information.
+
+      COMMON QUESTION TYPES:
+      • "What is the man's problem?" — listen for complaint or difficulty language
+      • "What does the woman suggest?" — listen for should, why don't you, how about, you could
+      • "What will they do next?" — listen for the last exchange
+      • "Where does the conversation take place?" — listen for context clues (vocabulary)
+
+      GRAPHIC QUESTIONS (newer TOEIC): Use the visual + the conversation together.
+
+      Score target B1→B2: aim for 75-80% correct on Part 3.
+    common_errors:
+      - "Listening to every word instead of focusing on the questions"
+      - "Choosing an answer that contains words from the conversation but is factually wrong"
+      - "Not reading questions in advance — the key strategy for Part 3"
+
+  - id: b1_014
+    cefr_level: B1
+    skill: vocabulary
+    topic: vocabulary_environment
+    content: |
+      Environmental vocabulary is tested frequently in TOEIC reading (articles, reports).
+
+      KEY ENVIRONMENTAL NOUNS:
+      • climate change / global warming
+      • greenhouse gas emissions / carbon footprint
+      • renewable energy: solar power, wind energy, hydroelectric power
+      • fossil fuels: coal, oil, natural gas
+      • pollution: air pollution, water pollution, noise pollution
+      • deforestation / habitat loss / biodiversity
+      • sustainability / sustainable development
+      • recycling / waste management / landfill
+
+      KEY VERBS AND COLLOCATIONS:
+      • reduce emissions | cut carbon dioxide levels | lower one's carbon footprint
+      • implement (green) policies | adopt renewable energy sources
+      • protect endangered species | preserve natural habitats
+      • recycle waste materials | minimise environmental impact
+
+      KEY ADJECTIVES:
+      • sustainable (development) | eco-friendly / environmentally friendly
+      • renewable (energy) | non-renewable | biodegradable
+
+      TOEIC CONTEXT: These words appear in articles about corporate sustainability reports,
+      government policies, and company announcements about "going green."
+    common_errors:
+      - "Confusing climate and weather: weather = short-term (today's rain); climate = long-term patterns"
+      - "Reduce vs decrease vs cut: all synonyms but 'cut' is more informal"
+      - "'Make pollution' is unnatural → 'cause pollution' or 'produce emissions'"
+
+  - id: b1_015
+    cefr_level: B1
+    skill: writing
+    topic: paragraph_structure
+    content: |
+      A well-structured paragraph has three parts. This is fundamental for TOEIC writing tasks.
+
+      1. TOPIC SENTENCE (first sentence):
+      States the main idea of the paragraph clearly.
+      "Working from home has several significant advantages for employees."
+
+      2. SUPPORTING SENTENCES (middle):
+      Give details, examples, or reasons that support the topic sentence.
+      Use connectors to link ideas: first, in addition, for example, furthermore.
+      "First, employees save time and money by not commuting to the office every day.
+      In addition, they can create a more comfortable and personalised work environment.
+      For example, they can adjust the temperature and choose their own desk setup."
+
+      3. CONCLUDING SENTENCE (last sentence):
+      Summarises the paragraph or links to the next paragraph.
+      "For these reasons, remote work can significantly improve employee satisfaction."
+
+      TOEIC WRITING TASK TIP:
+      For an opinion essay (Part 2), write 3-4 paragraphs:
+      • Introduction (with your opinion clearly stated)
+      • Body paragraph 1 (reason 1 + example)
+      • Body paragraph 2 (reason 2 + example)
+      • Conclusion (restate your opinion + summary)
+
+      Aim for 150-200 words in the time given.
+    common_errors:
+      - "Writing one paragraph with no structure"
+      - "Topic sentence that is too vague: 'Working from home is good.' → be specific"
+      - "No concluding sentence — always close the paragraph"

@@ -1,0 +1,295 @@
+# A2 Pedagogical Corpus — 10 chunks
+# Format: one pedagogical unit per chunk (~100-200 tokens)
+# Each chunk is the RAG retrieval unit for A2 learners.
+
+chunks:
+
+  - id: a2_001
+    cefr_level: A2
+    skill: grammar
+    topic: simple_past_regular
+    content: |
+      The simple past tense describes completed actions in the past.
+      For regular verbs, add -ed to the base form.
+
+      Rules:
+      • Most verbs: add -ed → walk → walked, play → played
+      • Verbs ending in -e: add -d → live → lived, love → loved
+      • Verbs ending in consonant + y: change y → i + ed → study → studied, try → tried
+      • Short verbs (CVC pattern): double the final consonant + ed → stop → stopped, plan → planned
+
+      Time markers often used: yesterday, last week, last year, ago, in 2020.
+
+      Example sentences:
+      "I visited my grandmother last Sunday."
+      "She studied English for two hours yesterday."
+      "They stopped at the traffic lights."
+    common_errors:
+      - "Adding -ed to irregular verbs: *I goed → I went"
+      - "Forgetting to double the consonant: *I stoped → I stopped"
+      - "Using present tense with past time markers: *I go yesterday → I went yesterday"
+
+  - id: a2_002
+    cefr_level: A2
+    skill: grammar
+    topic: simple_past_irregular
+    content: |
+      Many common English verbs have irregular past forms that must be memorised.
+
+      High-frequency irregular verbs (essential for A2):
+      • be → was/were     • have → had       • do → did
+      • go → went         • come → came      • see → saw
+      • get → got         • give → gave      • take → took
+      • make → made       • think → thought  • know → knew
+      • say → said        • tell → told      • buy → bought
+      • eat → ate         • drink → drank    • sleep → slept
+      • write → wrote     • read → read      • meet → met
+
+      Negative: did not (didn't) + base form → "I didn't go to school yesterday."
+      Question: Did + subject + base form → "Did you see the film?"
+
+      Example: "Last night I had dinner with my family. We ate pizza and drank juice."
+    common_errors:
+      - "Using irregular form in negative: *I didn't went → I didn't go"
+      - "Using irregular form in question: *Did you went? → Did you go?"
+      - "Confusing similar forms: *I thinked → I thought"
+
+  - id: a2_003
+    cefr_level: A2
+    skill: grammar
+    topic: present_continuous
+    content: |
+      The present continuous (be + verb-ing) describes actions happening now or around now,
+      and future arrangements.
+
+      Form: am/is/are + base verb + -ing
+
+      Spelling rules for -ing:
+      • Most verbs: add -ing → read → reading, play → playing
+      • Verbs ending in -e: remove e + ing → make → making, write → writing
+      • Short CVC verbs: double consonant + ing → run → running, sit → sitting
+
+      Uses:
+      1. Action happening right now: "She is talking on the phone."
+      2. Temporary situation: "I am living with my parents this month."
+      3. Future arrangement: "We are meeting tomorrow at 10."
+
+      NOT used for states: *I am knowing → I know. *She is liking → She likes.
+    common_errors:
+      - "Using with state verbs: *I am knowing the answer"
+      - "Forgetting to double consonant: *I am runing → I am running"
+      - "Using simple present for actions happening now: *She talks on the phone (when she is doing it now)"
+
+  - id: a2_004
+    cefr_level: A2
+    skill: grammar
+    topic: articles
+    content: |
+      English has three articles: a, an, and the. Choosing the right one is essential.
+
+      A / AN (indefinite article):
+      • Use for singular countable nouns mentioned for the first time.
+      • Use when the listener does not know which specific thing you mean.
+      • A + consonant sound: a book, a university (note: 'u' sounds like 'you')
+      • AN + vowel sound: an apple, an hour (note: 'h' is silent)
+
+      THE (definite article):
+      • Use when both speaker and listener know which thing is meant.
+      • Use when something is mentioned for the second time.
+      • Use with unique things: the sun, the moon, the internet.
+      • Use with superlatives: the best, the most expensive.
+
+      NO article:
+      • Plural nouns in general: "Dogs are friendly animals."
+      • Uncountable nouns in general: "Water is essential for life."
+      • Most countries, cities, names: "I live in Algeria."
+
+      Example: "I saw a dog in the park. The dog was very big."
+    common_errors:
+      - "Using 'a' before vowel sounds: *a apple → an apple"
+      - "Omitting 'the' for second mention: *I have a cat. Cat is white → The cat is white"
+      - "Adding article to countries: *the Algeria → Algeria"
+
+  - id: a2_005
+    cefr_level: A2
+    skill: grammar
+    topic: comparatives_superlatives
+    content: |
+      Comparatives compare two things. Superlatives compare one thing to all others in a group.
+
+      COMPARATIVES:
+      • Short adjectives (1 syllable): add -er → fast → faster, old → older
+      • Adjectives ending in -e: add -r → large → larger, nice → nicer
+      • Short CVC adjectives: double consonant + er → big → bigger, hot → hotter
+      • Long adjectives (2+ syllables): more + adjective → more expensive, more interesting
+      • Irregular: good → better, bad → worse, far → farther/further
+
+      Use "than" to make the comparison: "English is easier than Arabic for me."
+
+      SUPERLATIVES:
+      • Short: add -est → fast → the fastest
+      • Long: the most + adjective → the most difficult
+      • Irregular: good → the best, bad → the worst
+
+      Example: "My brother is taller than me, but I am the tallest in my class."
+    common_errors:
+      - "Using more with short adjectives: *more fast → faster"
+      - "Omitting 'than': *He is taller me → He is taller than me"
+      - "Omitting 'the' with superlatives: *She is most intelligent → She is the most intelligent"
+
+  - id: a2_006
+    cefr_level: A2
+    skill: grammar
+    topic: modal_verbs_basic
+    content: |
+      Modal verbs add meaning about ability, possibility, or advice.
+      They are always followed by the base form (infinitive without 'to').
+
+      CAN / COULD:
+      • Can = present ability: "I can speak three languages."
+      • Can = permission: "Can I use your phone?"
+      • Could = past ability: "When I was young, I could run very fast."
+      • Could = polite request: "Could you help me, please?"
+
+      SHOULD:
+      • Advice / recommendation: "You should study every day."
+      • Negative: "You shouldn't eat too much sugar."
+
+      MUST / HAVE TO:
+      • Strong obligation: "You must show your passport at the border."
+      • Have to = external obligation: "I have to wear a uniform at work."
+      • Mustn't = prohibition: "You mustn't park here."
+      • Don't have to = no obligation: "You don't have to come if you don't want to."
+
+      Example: "You should practise speaking English every day. You can watch films in English."
+    common_errors:
+      - "Adding 'to' after modal: *I can to swim → I can swim"
+      - "Adding -s for third person: *She cans → She can"
+      - "Confusing mustn't and don't have to: *You mustn't wear a tie (when it is just optional)"
+
+  - id: a2_007
+    cefr_level: A2
+    skill: vocabulary
+    topic: prepositions_time_place
+    content: |
+      Prepositions of time (IN / ON / AT):
+
+      IN: longer periods
+      • Months: in January, in March
+      • Years: in 2024, in the 1990s
+      • Seasons: in summer, in the winter
+      • Parts of the day: in the morning, in the afternoon, in the evening
+
+      ON: specific days and dates
+      • Days of the week: on Monday, on Friday
+      • Specific dates: on 14 July, on my birthday
+      • Special days: on New Year's Day
+
+      AT: specific times and points
+      • Clock times: at 8 o'clock, at noon, at midnight
+      • Set expressions: at the weekend, at Christmas, at night
+
+      Prepositions of place (IN / ON / AT):
+      • IN: enclosed space → in the room, in the car, in Algeria
+      • ON: surface → on the table, on the wall, on the first floor
+      • AT: specific point or location → at the bus stop, at school, at home
+
+      Example: "I was born in Algeria in 2001. I go to school on Mondays. Class starts at 8."
+    common_errors:
+      - "*at Monday → on Monday"
+      - "*in the night → at night"
+      - "*on 2024 → in 2024"
+      - "*in the bus stop → at the bus stop"
+
+  - id: a2_008
+    cefr_level: A2
+    skill: grammar
+    topic: wh_questions
+    content: |
+      Wh- questions ask for specific information. The question word comes first.
+
+      Question words and their meanings:
+      • What — thing or action: "What is your job?"
+      • Where — place: "Where do you live?"
+      • When — time: "When did you arrive?"
+      • Who — person (subject): "Who called you?"
+      • Whom — person (object, formal): "Whom did you call?"
+      • Why — reason: "Why are you late?"
+      • How — manner/degree: "How do you go to work?"
+      • How much — uncountable quantity/price: "How much does it cost?"
+      • How many — countable quantity: "How many brothers do you have?"
+      • How long — duration: "How long have you been waiting?"
+
+      Word order: Wh- word + auxiliary (do/does/did/is/are/was) + subject + main verb
+
+      Example: "Where does she work?" NOT "Where she works?"
+      Exception: when the question word IS the subject, no auxiliary: "Who broke the window?"
+    common_errors:
+      - "Wrong word order: *Where you live? → Where do you live?"
+      - "Wrong auxiliary: *What she does? → What does she do?"
+      - "Using 'how much' for countable nouns: *How much books? → How many books?"
+
+  - id: a2_009
+    cefr_level: A2
+    skill: vocabulary
+    topic: basic_conjunctions
+    content: |
+      Conjunctions connect words, phrases, or clauses.
+
+      Coordinating conjunctions (connect equal parts):
+      • AND — addition: "I like tea and coffee."
+      • BUT — contrast: "I like tea but I don't like coffee."
+      • OR — choice: "Would you like tea or coffee?"
+      • SO — result: "It was raining, so I took an umbrella."
+
+      Subordinating conjunctions (connect a main clause to a dependent clause):
+      • BECAUSE — reason: "I am tired because I worked all day."
+      • ALTHOUGH / EVEN THOUGH — contrast: "Although it was cold, we went for a walk."
+      • WHEN — time: "When I was a child, I lived in the countryside."
+      • IF — condition: "If you study hard, you will pass the exam."
+      • BEFORE / AFTER — sequence: "I brush my teeth before I go to bed."
+
+      Common mistake: using BECAUSE OF instead of BECAUSE:
+      • Because of + noun phrase: "Because of the rain, we stayed inside."
+      • Because + clause: "Because it was raining, we stayed inside."
+    common_errors:
+      - "Starting a sentence with 'because' without a main clause: *Because I was tired. (incomplete)"
+      - "Using 'but' and 'although' together: *But although I was tired → Although I was tired"
+      - "Confusing 'because' and 'because of': *Because of I was tired → Because I was tired"
+
+  - id: a2_010
+    cefr_level: A2
+    skill: writing
+    topic: simple_email_structure
+    content: |
+      Writing a simple email or message in English follows a clear structure.
+
+      Structure of a friendly or semi-formal email:
+
+      1. GREETING:
+         • Formal: "Dear Mr Smith," / "Dear Ms Johnson,"
+         • Informal: "Hi Maria," / "Hello Ahmed,"
+
+      2. OPENING LINE — state why you are writing:
+         "I am writing to ask about..." / "I am writing to thank you for..."
+         "I wanted to let you know that..."
+
+      3. MAIN MESSAGE — give details clearly, one idea per paragraph.
+
+      4. CLOSING LINE:
+         "Please let me know if you have any questions."
+         "I look forward to hearing from you."
+         "I hope to hear from you soon."
+
+      5. SIGN-OFF:
+         • Formal: "Yours sincerely," / "Kind regards,"
+         • Informal: "Best wishes," / "Take care,"
+
+      6. YOUR NAME
+
+      Tip: Keep sentences short and clear. One idea per sentence.
+      Avoid: contractions in formal emails (don't → do not; I'm → I am).
+    common_errors:
+      - "No greeting or sign-off in formal emails"
+      - "Using 'Dear Sir or Madam' when you know the person's name"
+      - "Starting the email with 'I' — rude in formal writing; use 'I am writing to...'"

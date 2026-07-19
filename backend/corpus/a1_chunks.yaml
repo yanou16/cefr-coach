@@ -1,0 +1,392 @@
+# A1 Pedagogical Corpus — 15 chunks
+# Format: one pedagogical unit per chunk (~100-200 tokens)
+# Each chunk is the RAG retrieval unit for A1 learners.
+
+chunks:
+
+  - id: a1_001
+    cefr_level: A1
+    skill: grammar
+    topic: verb_to_be_present
+    content: |
+      The verb "to be" is the most important verb in English. It has three forms in the present tense: am, is, are.
+
+      Subject + to be:
+      • I am → I'm
+      • You are → You're
+      • He / She / It is → He's / She's / It's
+      • We / They are → We're / They're
+
+      Use "to be" to describe people, things, and places.
+      Example sentences:
+      "I am a student. I am 20 years old."
+      "She is a teacher. She is very kind."
+      "They are from Algeria."
+
+      Negative: add "not" → I am not (I'm not), He is not (He isn't), They are not (They aren't).
+      Question: move verb before subject → Are you a student? Is she at home?
+    common_errors:
+      - "Using 'is' for 'I': *I is happy → I am happy"
+      - "Forgetting 'to be' entirely: *She teacher → She is a teacher"
+      - "Wrong contraction: *He're → He's"
+
+  - id: a1_002
+    cefr_level: A1
+    skill: grammar
+    topic: present_simple_basic
+    content: |
+      The present simple tense describes habits, routines, and facts.
+
+      Structure: Subject + base verb (add -s/-es for he/she/it)
+      • I eat breakfast at 7. / She eats breakfast at 7.
+      • They live in Paris. / He lives in Paris.
+      • We study English. / She studies English (y → ies).
+
+      Spelling rules for he/she/it:
+      • Most verbs: add -s → work → works, play → plays
+      • Verbs ending in -s, -sh, -ch, -x, -o: add -es → watch → watches, go → goes
+      • Verbs ending in consonant + y: y → ies → study → studies
+
+      Time markers: every day, usually, always, often, sometimes, never.
+      "I always drink coffee in the morning."
+      "She never watches TV."
+    common_errors:
+      - "Missing -s for third person: *She eat lunch → She eats lunch"
+      - "Using -s for I/you/we/they: *We eats dinner → We eat dinner"
+      - "Wrong spelling: *She studys → She studies"
+
+  - id: a1_003
+    cefr_level: A1
+    skill: grammar
+    topic: articles_a_an_the
+    content: |
+      English has three articles: a, an, the.
+
+      A / An (indefinite articles) — used for one unspecified thing:
+      • Use "a" before consonant sounds: a book, a cat, a university (u = /juː/)
+      • Use "an" before vowel sounds: an apple, an hour (h is silent), an egg
+
+      The (definite article) — used for a specific thing both speaker and listener know:
+      "I saw a dog. The dog was big." (first mention: a; second mention: the)
+      "Close the window, please." (the window in this room, both know which one)
+      "The sun is hot today." (unique in the world)
+
+      No article — used with plural general nouns and uncountable nouns:
+      "I like dogs." (dogs in general) / "Water is important." (uncountable)
+    common_errors:
+      - "Using 'a' before vowel sound: *a apple → an apple"
+      - "Using 'the' for general meaning: *I like the music → I like music"
+      - "Omitting article before singular countable nouns: *I have cat → I have a cat"
+
+  - id: a1_004
+    cefr_level: A1
+    skill: grammar
+    topic: there_is_there_are
+    content: |
+      Use "there is" and "there are" to say that something exists or is in a place.
+
+      • There is + singular/uncountable: "There is a book on the table." / "There is some water."
+      • There are + plural: "There are three chairs in the room."
+
+      Contractions: There's (= There is) — common in spoken English.
+      "There's a problem." / "There are no problems."
+
+      Negative: There is not (There isn't) / There are not (There aren't)
+      "There isn't any milk in the fridge."
+      "There aren't any students in the class."
+
+      Question: Is there...? / Are there...?
+      "Is there a bank near here?" "Yes, there is."
+      "Are there any restaurants?" "No, there aren't."
+    common_errors:
+      - "Using 'it is' for existence: *It is a park near here → There is a park near here"
+      - "Using 'there is' with plural: *There is two cats → There are two cats"
+      - "Wrong word order in question: *There is a bank? → Is there a bank?"
+
+  - id: a1_005
+    cefr_level: A1
+    skill: vocabulary
+    topic: numbers_time_dates
+    content: |
+      Essential numbers, time, and date vocabulary for A1 learners.
+
+      Cardinal numbers: one, two, three, four, five, six, seven, eight, nine, ten,
+      eleven, twelve, thirteen, fourteen, fifteen, sixteen, seventeen, eighteen, nineteen, twenty.
+      Tens: twenty, thirty, forty, fifty, sixty, seventy, eighty, ninety, one hundred.
+
+      Ordinal numbers: first (1st), second (2nd), third (3rd), fourth (4th)…
+
+      Time expressions:
+      • "What time is it?" → "It's two o'clock." / "It's half past three." / "It's quarter to five."
+      • In the morning / in the afternoon / in the evening / at night
+
+      Days: Monday, Tuesday, Wednesday, Thursday, Friday, Saturday, Sunday.
+      Months: January, February, March, April, May, June, July, August, September, October, November, December.
+
+      "My birthday is on the fifteenth of July."
+      "I have class on Monday and Wednesday."
+    common_errors:
+      - "Wrong ordinal form: *the oneth → the first"
+      - "Confusing 'on' and 'in' with time: *in Monday → on Monday; *on July → in July"
+      - "Missing 'the' before ordinal dates in British English: *on fifteen July → on the fifteenth of July"
+
+  - id: a1_006
+    cefr_level: A1
+    skill: grammar
+    topic: subject_object_pronouns
+    content: |
+      Pronouns replace nouns to avoid repetition. Learn both subject and object forms.
+
+      Subject pronouns (do the action): I, you, he, she, it, we, they
+      Object pronouns (receive the action): me, you, him, her, it, us, them
+
+      "I love her." (I = subject; her = object — she became her)
+      "She called me yesterday." (me = object of 'called')
+      "Can you help us?" (us = object of 'help')
+      "I know him well." (him = object — he became him)
+
+      Common mistake: "Me and my friend went…" → Correct: "My friend and I went…"
+      Rule: when the pronoun is the subject, use subject form. Test by removing the other person:
+      "I went to the park" (not "Me went")
+    common_errors:
+      - "Object pronoun as subject: *Me and Tom went → Tom and I went"
+      - "Subject pronoun as object: *She called I → She called me"
+      - "He/she confusion with 'it' for objects: *My phone, he is new → My phone, it is new"
+
+  - id: a1_007
+    cefr_level: A1
+    skill: grammar
+    topic: possessives
+    content: |
+      Possessive adjectives and pronouns show ownership.
+
+      Possessive adjectives (come before a noun):
+      my, your, his, her, its, our, their
+      "This is my book." / "Where is your bag?" / "She loves her dog."
+
+      Possessive pronouns (stand alone, no noun after):
+      mine, yours, his, hers, its, ours, theirs
+      "This book is mine." / "That bag is yours."
+
+      Possessive 's — add 's to a person's name or noun:
+      "Sarah's phone is new." / "The dog's name is Rex." / "My friend's sister lives in London."
+
+      For plural nouns already ending in -s, just add ':
+      "The students' books are on the table." (books belonging to the students)
+    common_errors:
+      - "Confusing 'its' (possessive) and 'it's' (it is): *Its cold today → It's cold today"
+      - "Using possessive adjective instead of pronoun: *This book is my → This book is mine"
+      - "Forgetting apostrophe: *Sarahs phone → Sarah's phone"
+
+  - id: a1_008
+    cefr_level: A1
+    skill: grammar
+    topic: can_for_ability
+    content: |
+      Use "can" to express ability (things you are able to do) and "can't" for inability.
+
+      Structure: Subject + can/can't + base verb (no -s, no to)
+      • Positive: "I can swim." / "She can speak French."
+      • Negative: "He can't drive." / "We can't come tomorrow."
+      • Question: "Can you cook?" → "Yes, I can." / "No, I can't."
+
+      "Can" is a modal verb — it does not change for he/she/it.
+      Correct: "She can play the guitar." ✓
+      Wrong: "She cans play the guitar." ✗
+
+      Other uses of "can":
+      • Asking for permission: "Can I use your pen?" (informal)
+      • Making requests: "Can you help me, please?"
+    common_errors:
+      - "Adding -s for third person: *She cans swim → She can swim"
+      - "Using 'to' after can: *I can to swim → I can swim"
+      - "Confusing 'can' and 'know how to': *I can know how to cook → I can cook / I know how to cook"
+
+  - id: a1_009
+    cefr_level: A1
+    skill: vocabulary
+    topic: common_adjectives_descriptions
+    content: |
+      Basic adjectives for describing people, places, and things at A1 level.
+
+      Size: big, small, large, little, tall, short, long
+      Quality: good, bad, great, terrible, nice, awful
+      Age: old, young, new
+      Colour: red, blue, green, yellow, black, white, orange, pink, purple, brown
+      Feelings: happy, sad, tired, hungry, thirsty, cold, hot, angry, bored
+      Temperature: hot, warm, cold, cool
+
+      Position of adjectives:
+      • Before noun: "a big house", "a beautiful day", "a new car"
+      • After linking verb (be, feel, seem, look): "The house is big." / "She feels tired."
+
+      Comparative (two things): add -er or use "more"
+      "My bag is heavier than yours." / "This is more expensive."
+
+      Superlative (the most): add -est or use "most"
+      "She is the tallest in the class." / "It's the most beautiful city."
+    common_errors:
+      - "Adjective after noun: *a house big → a big house"
+      - "Double comparative: *more taller → taller"
+      - "Wrong superlative spelling: *the most tallest → the tallest"
+
+  - id: a1_010
+    cefr_level: A1
+    skill: grammar
+    topic: imperatives
+    content: |
+      Imperatives give instructions, orders, advice, or invitations.
+
+      Positive imperative: use the base form of the verb (no subject).
+      "Open the door." / "Please sit down." / "Listen carefully."
+
+      Negative imperative: Don't + base verb.
+      "Don't speak so loudly." / "Don't forget your keys."
+
+      Polite requests: add "please" at the beginning or end.
+      "Please open the window." / "Pass the salt, please."
+
+      Common uses:
+      • Instructions: "Turn left at the corner. Walk straight ahead."
+      • Safety: "Stop! Don't walk on the road."
+      • Invitations: "Come to my party on Saturday!"
+      • Advice: "Drink lots of water. Get enough sleep."
+
+      Note: The subject "you" is understood but not said.
+    common_errors:
+      - "Including subject: *You open the door → Open the door"
+      - "Using 'do not' without 'base verb': *Don't to forget → Don't forget"
+      - "Wrong word order for negative: *Open not the door → Don't open the door"
+
+  - id: a1_011
+    cefr_level: A1
+    skill: vocabulary
+    topic: common_verbs_everyday_actions
+    content: |
+      High-frequency verbs every A1 learner must know.
+
+      Daily routine verbs: wake up, get up, wash, eat, drink, go, come, leave, arrive, sleep
+      Communication: speak, say, tell, ask, answer, listen, read, write
+      Movement: walk, run, sit, stand, take, give, put, bring
+      Senses: see, look (at), hear, listen (to), feel, smell, taste
+      Mental: think, know, understand, like, love, want, need, have
+
+      Important distinction:
+      • "see" (involuntary) vs "look at" (deliberate): "I see a bird." / "Look at that bird!"
+      • "hear" (involuntary) vs "listen to" (deliberate): "I can hear music." / "I listen to music every day."
+
+      Common verb + noun collocations:
+      "have breakfast / lunch / dinner" / "make a phone call" / "do homework" / "take a photo"
+    common_errors:
+      - "Confusing 'say' and 'tell': *She said me → She told me"
+      - "Using wrong preposition with listen: *listen music → listen to music"
+      - "Forgetting object with 'tell': *She told → She told me (told needs an indirect object)"
+
+  - id: a1_012
+    cefr_level: A1
+    skill: writing
+    topic: basic_sentence_structure
+    content: |
+      An English sentence must have a subject and a verb. This is the foundation of grammar.
+
+      Basic patterns:
+      1. Subject + Verb: "Birds fly." / "She laughs."
+      2. Subject + Verb + Object: "I eat rice." / "He reads books."
+      3. Subject + Verb + Complement: "She is a doctor." / "The soup tastes good."
+      4. Subject + Verb + Place/Time: "They live in London." / "We study at 8am."
+
+      Sentence punctuation:
+      • Start with a capital letter.
+      • End with a full stop (.), question mark (?), or exclamation mark (!).
+      • Each sentence expresses one complete idea.
+
+      Joining two ideas: use "and", "but", "because", "so":
+      "I like coffee but I don't like tea."
+      "She studies hard because she wants to pass."
+    common_errors:
+      - "Missing subject: *Is a nice day → It is a nice day"
+      - "Missing verb: *My sister a teacher → My sister is a teacher"
+      - "No capital at start: *tomorrow I will come → Tomorrow I will come"
+
+  - id: a1_013
+    cefr_level: A1
+    skill: vocabulary
+    topic: family_relationships
+    content: |
+      Essential family vocabulary for A1 learners.
+
+      Immediate family:
+      • mother (mum/mom), father (dad), parents
+      • son, daughter, children
+      • brother, sister, siblings
+      • husband, wife, partner, spouse
+
+      Extended family:
+      • grandmother (grandma), grandfather (grandpa), grandparents
+      • uncle, aunt, cousin
+      • nephew, niece
+
+      Useful phrases:
+      "I have one brother and two sisters."
+      "My parents are from Algeria."
+      "She is married and has two children."
+      "He is an only child." (no brothers or sisters)
+      "My cousin and I are the same age."
+
+      Family descriptions:
+      "a big family / a small family / a close-knit family"
+    common_errors:
+      - "Confusing 'son' and 'sun' (pronunciation): son = /sʌn/"
+      - "Using 'childs' instead of 'children': *She has three childs → She has three children"
+      - "Confusing nephew/niece: nephew = brother's/sister's son; niece = brother's/sister's daughter"
+
+  - id: a1_014
+    cefr_level: A1
+    skill: grammar
+    topic: prepositions_place
+    content: |
+      Prepositions of place describe where something is.
+
+      Common prepositions:
+      • in — inside an enclosed space: "in the box", "in the room", "in London"
+      • on — on a surface: "on the table", "on the wall", "on the floor"
+      • at — at a specific point or place: "at the bus stop", "at school", "at home"
+      • under — below something: "under the bed", "under the bridge"
+      • next to / beside — very close: "The bank is next to the supermarket."
+      • between — in the middle of two things: "The park is between the library and the school."
+      • in front of / behind: "The car is in front of the house." / "The garden is behind the house."
+      • near — close but not exact: "Is there a pharmacy near here?"
+
+      Practice: "The cat is on the chair. The bag is under the chair. The book is next to the bag."
+    common_errors:
+      - "Using 'in' for specific points: *I am in the bus stop → I am at the bus stop"
+      - "Using 'on' for cities: *He lives on London → He lives in London"
+      - "Missing preposition: *She is home → She is at home"
+
+  - id: a1_015
+    cefr_level: A1
+    skill: speaking
+    topic: greetings_introductions
+    content: |
+      Essential phrases for greetings and introductions at A1 level.
+
+      Greetings:
+      • Formal: "Good morning." / "Good afternoon." / "Good evening."
+      • Informal: "Hi!" / "Hello!" / "Hey!"
+      • Asking how someone is: "How are you?" → "Fine, thanks." / "Very well, thank you."
+      • "Nice to meet you." → "Nice to meet you too."
+
+      Introductions:
+      "My name is Sara. I'm from Algeria. I'm 22 years old. I'm a student."
+      "This is my friend Ahmed. He works in a café."
+
+      Farewells:
+      • "Goodbye." / "Bye!" / "See you later." / "See you tomorrow." / "Good night."
+      • "Take care!" / "Have a good day!"
+
+      Useful classroom phrases:
+      "Can you repeat that, please?" / "I don't understand." / "How do you say ___ in English?" / "Can you speak more slowly, please?"
+    common_errors:
+      - "Using 'Good night' as a greeting: it is ONLY a farewell"
+      - "Omitting 'to': *Nice meet you → Nice to meet you"
+      - "Wrong response to 'How are you?': *I am fine thank → I am fine, thank you"

@@ -1,0 +1,351 @@
+# C2 Pedagogical Corpus — 12 chunks
+# Format: one pedagogical unit per chunk (~150-250 tokens)
+# Each chunk is the RAG retrieval unit for C2/near-native learners.
+
+chunks:
+
+  - id: c2_001
+    cefr_level: C2
+    skill: vocabulary
+    topic: semantic_precision_near_synonyms
+    content: |
+      C2 proficiency requires discrimination between near-synonyms where the difference is subtle but meaningful. Imprecision here exposes non-native fluency.
+
+      imply vs. infer:
+      • The speaker/writer implies (encodes implicit meaning).
+      • The listener/reader infers (decodes implicit meaning).
+      "Her tone implied impatience." / "I inferred from her tone that she was impatient."
+
+      affect vs. effect:
+      • affect (verb): to influence — "Stress can affect sleep quality."
+      • effect (noun): a result — "The effect of stress on sleep is well-documented."
+      • effect (verb, rare/formal): to bring about — "The new policy effected significant change."
+      • affect (noun, psychology): emotional state — "The patient displayed flat affect."
+
+      comprise vs. compose:
+      • The whole comprises the parts: "The committee comprises twelve members." (no 'of')
+      • The parts compose the whole: "Twelve members compose the committee."
+      • "Comprised of" is widely disputed as non-standard; use "composed of" or "consisting of".
+
+      disinterested vs. uninterested:
+      • disinterested: impartial, without personal stake (the legally/academically useful sense)
+      • uninterested: not interested, bored
+      "A disinterested mediator" (impartial) ≠ "an uninterested student" (bored).
+    common_errors:
+      - "Using 'infer' for 'imply': *She inferred that I was wrong → She implied that I was wrong"
+      - "Using 'disinterested' to mean 'bored': loses a useful distinction"
+      - "Saying 'comprised of': write 'composed of' or 'comprising'"
+
+  - id: c2_002
+    cefr_level: C2
+    skill: grammar
+    topic: stylistic_variation_register_shifting
+    content: |
+      C2 users can shift style, register, and voice deliberately and with full control — they understand not just what to write but how and why stylistic choices produce different effects.
+
+      Active vs. passive voice — strategic choice, not avoidance:
+      • Active emphasises agency: "Parliament passed the bill unanimously."
+      • Passive suppresses agent (when unknown, obvious, or rhetorically suppressed): "The bill was passed unanimously." / "Mistakes were made." (deliberate evasion of agency)
+      • Passive foregrounds the patient as topic: "The manuscript, long believed lost, was discovered in a private archive."
+
+      Sentence rhythm and length:
+      • Short declarative sentences create emphasis and pace: "It failed. Completely."
+      • Long, subordinated sentences create complexity, qualification, and forward momentum.
+      • Vary length deliberately: a short sentence after several long ones commands attention.
+
+      Fronting and topicalisation for emphasis:
+      • "This question, the committee has debated for months." (topic fronted)
+      • "Remarkable, that is the only word for it." (complement fronted)
+
+      Parenthetical insertion for nuance:
+      "The decision — if it can be called that — reflected a failure of nerve."
+    common_errors:
+      - "Using passive uniformly to sound formal — agents matter rhetorically"
+      - "All sentences the same length — monotony signals weak stylistic control"
+      - "Over-parenthesising: one effective parenthetical per paragraph is usually enough"
+
+  - id: c2_003
+    cefr_level: C2
+    skill: vocabulary
+    topic: idiomatic_and_metaphorical_language
+    content: |
+      At C2 level, learners recognise and deploy idiomatic and metaphorical language as naturally as native speakers, including awareness of freshness vs. cliché.
+
+      Live metaphors vs. dead metaphors:
+      • Dead (so conventional they are not felt as metaphorical): "the foot of the hill", "a deadline", "brainstorming"
+      • Conventionalised (recognised as figurative but automatic): "shed light on", "grasp a concept", "reach a conclusion"
+      • Live (fresh, creative, noticed): "The regulation is a straitjacket on innovation."
+
+      Extended metaphor in writing:
+      Once a metaphor is introduced, it can be extended deliberately:
+      "The economy is a ship: the government steers, but markets provide the wind, and consumers are the cargo — heavy, resistant, and prone to shifting."
+
+      Idioms and their pragmatic constraints:
+      • "bite the bullet": accept something unpleasant but necessary — formal enough for editorials, too informal for academic prose.
+      • "watershed moment": formal, neutral — suitable for academic, journalistic, professional contexts.
+      • "on the fence": informal — avoid in formal writing; write "remain undecided" or "withhold judgment".
+
+      Knowing when NOT to use an idiom is as important as knowing the idiom.
+    common_errors:
+      - "Extending a mixed metaphor unintentionally: *'We need to nip this snowball in the bud before it comes home to roost'"
+      - "Using informal idioms in academic prose"
+      - "Taking figurative expressions literally in reading comprehension"
+
+  - id: c2_004
+    cefr_level: C2
+    skill: writing
+    topic: argumentation_rhetoric
+    content: |
+      C2 writers deploy rhetorical strategies consciously to persuade, influence, and construct authoritative prose.
+
+      Classical rhetoric — ethos, pathos, logos:
+      • Ethos (credibility): establish authority through evidence, expertise, fair representation of opposing views.
+      • Pathos (emotion): engage the reader's values, use concrete examples, vary sentence rhythm for emotional effect.
+      • Logos (logic): valid deductive or inductive structure, no logical fallacies.
+
+      Common logical fallacies to avoid:
+      • Ad hominem: attacking the person rather than the argument.
+      • Straw man: misrepresenting an opponent's position.
+      • False dichotomy: presenting only two options when more exist.
+      • Slippery slope: claiming one event inevitably leads to extreme consequences without showing causation.
+      • Circular reasoning: the conclusion restates the premise.
+      • Appeal to authority: citing an expert outside their domain.
+
+      Concession-refutation pattern (the strongest argumentative move):
+      "One might object that X. While this concern is not without merit, it overlooks Y. Furthermore, when Z is considered, it becomes clear that…"
+
+      Epistemic framing: signal the strength of claims accurately.
+      Strong: "It is established that…" / Hedged: "It is plausible that…" / Tentative: "It may be that…"
+    common_errors:
+      - "Conceding without refuting — weakens the argument"
+      - "Overusing 'clearly' and 'obviously' — they assert rather than demonstrate"
+      - "Appealing to consensus ('Everyone knows that…') — this is not evidence"
+
+  - id: c2_005
+    cefr_level: C2
+    skill: grammar
+    topic: ellipsis_substitution_advanced
+    content: |
+      Ellipsis and substitution are hallmarks of fluent, idiomatic English. C2 users deploy them naturally without ambiguity.
+
+      Clausal ellipsis:
+      • Auxiliary ellipsis: "She can swim and so can he." / "I haven't read it but he has."
+      • VP ellipsis: "She wanted to leave, and I did too." ('did' substitutes for 'wanted to leave')
+      • To-infinitive ellipsis: "Are you going to the conference?" — "I hope to." (= I hope to go)
+      • Do-so: "He reorganised the files — I asked him to do so." (formal; 'do so' = reorganise the files)
+
+      Gapping (parallel structure ellipsis):
+      "Mary ordered fish and John, chicken." (verb 'ordered' is gapped)
+
+      Noun phrase substitution:
+      • "one/ones": "Take the red umbrella, not the blue one." (singular count)
+      • "so": "Is the meeting tomorrow?" — "I believe so." / "I'm afraid not." (negative)
+      • "the former / the latter": reference to first / second item previously mentioned.
+
+      Pragmatic conditions: ellipsis must not create ambiguity. When the referent is unclear, use full form.
+      Ambiguous: "She told her sister she'd won." (who won?)
+      Clear: "She told her sister that she herself had won."
+    common_errors:
+      - "Using 'the former/latter' with more than two referents — readers cannot track three-way reference"
+      - "Gapping across non-parallel structures — must have identical grammatical roles"
+      - "Ellipsis where full form prevents ambiguity: *She said she'd passed → Who is 'she' (second)?"
+
+  - id: c2_006
+    cefr_level: C2
+    skill: vocabulary
+    topic: word_formation_morphology
+    content: |
+      Mastery of English word formation allows C2 users to generate and decode unfamiliar words through prefix, suffix, and root analysis.
+
+      Prefixes — meaning change:
+      • un-, in-, im-, ir-, il-: negation — unhappy, incomplete, impolite, irrational, illegal
+      • mis-: wrongly — misinterpret, miscalculate, misalign
+      • over-/under-: excess/deficit — overestimate, underfund, overwhelm
+      • pre-/post-: before/after — predetermine, posthumous, postwar
+      • re-: again — reconsider, reformulate, reconceptualise
+      • counter-: against — counterproductive, counterintuitive, counterclaim
+      • semi-: half — semiconscious, semi-autonomous, semiotic
+
+      Suffixes — word class change:
+      • -ise/-ize (verb): legitimise, problematise, operationalise
+      • -ation/-tion (noun): realisation, operationalisation
+      • -ity (noun from adjective): ambiguity, authenticity, complicity
+      • -ous (adjective): ambiguous, conspicuous, contentious
+      • -ive (adjective): tentative, exhaustive, comprehensive
+      • -ify (verb): quantify, exemplify, simplify
+      • -ly (adverb): extensively, ostensibly, purportedly
+
+      Latin and Greek roots:
+      • -cred- (believe): credible, credential, credence, incredulous
+      • -vert- (turn): divert, subvert, revert, avert, inadvertent
+      • -script- (write): prescribe, transcribe, manuscript, conscript
+    common_errors:
+      - "Incorrect negation prefix: *illogical → not standard; use 'illogical' ✓; *unlogical ✗"
+      - "Over-regularising: *costed → cost (irregular past); *writed → wrote"
+      - "Confusing suffix function: -ous = adjective, not noun — *an ambiguous of intent ✗"
+
+  - id: c2_007
+    cefr_level: C2
+    skill: reading
+    topic: critical_reading_authorial_stance
+    content: |
+      C2 readers engage critically with texts — they analyse not just what is said but how it is said and what interests, assumptions, and values are embedded.
+
+      Identifying authorial stance through language:
+      • Reporting verbs signal stance: "X claims" (scepticism) vs "X demonstrates" (acceptance) vs "X speculates" (tentativeness)
+      • Evaluation adverbs embed assessment: "Predictably, the policy failed." (signals the outcome was expected and implies criticism)
+      • Hedging vs. asserting: "It is clear that" vs "It appears that" — the former attempts to close debate, the latter acknowledges uncertainty.
+
+      Recognising implicit assumptions (ideology):
+      • "Economic growth is essential for wellbeing." — presupposes growth and wellbeing are linked.
+      • "Getting back to normal" — presupposes the previous state was desirable and normal.
+
+      Distinguishing fact, opinion, and inference:
+      • Fact: verifiable claim — "GDP fell 3% in Q4."
+      • Opinion: evaluative claim — "This represents a catastrophic failure."
+      • Inference: claim derived from evidence — "This suggests a structural problem in the economy."
+
+      Recognising bias — selection, emphasis, omission:
+      What is NOT said is as analytically significant as what is said.
+    common_errors:
+      - "Accepting reporting verb neutrality uncritically — 'claims' vs 'shows' are not equivalent"
+      - "Treating evaluation adverbs as factual — 'predictably' is the author's judgment, not fact"
+      - "Missing omissions — critical reading requires asking 'whose voice is absent?'"
+
+  - id: c2_008
+    cefr_level: C2
+    skill: vocabulary
+    topic: pragmatic_competence_indirection
+    content: |
+      Pragmatic competence — understanding and producing indirect speech acts — is a defining feature of C2 proficiency.
+
+      Indirect speech acts: the literal and intended meaning diverge.
+      • "It's cold in here." → intended as a request to close a window, not a meteorological statement.
+      • "Could you possibly…?" → a request, not a genuine inquiry about ability.
+      • "Do you have the time?" → asking for the time, not for possession of a watch.
+
+      Face-threatening acts and mitigation:
+      Positive face (desire to be liked/approved of) and negative face (desire for autonomy) inform politeness strategies.
+      • Bald on-record: "Close the window." (direct, low face threat when status differential is clear)
+      • Positive politeness: "We're all freezing — would you mind…?" (in-group appeal)
+      • Negative politeness: "I'm terribly sorry to bother you, but I wonder if it might be possible…" (maximum deference)
+      • Off-record (indirection): "Someone left the window open." (no direct request; plausible deniability)
+
+      Cultural variation: degrees of indirectness vary across cultures and registers. In British English, understatement and indirection are culturally marked.
+    common_errors:
+      - "Interpreting all indirect speech literally — 'not bad' often means 'good' in British understatement"
+      - "Over-applying indirectness — excessive hedging in a context that expects directness reads as evasive"
+      - "Misreading irony as sincere assertion"
+
+  - id: c2_009
+    cefr_level: C2
+    skill: writing
+    topic: style_voice_authenticity
+    content: |
+      Developing an authentic, consistent authorial voice is the hallmark of C2 and beyond. Voice emerges from the intersection of syntactic choices, vocabulary range, rhythmic patterns, and stance.
+
+      Elements of voice:
+      • Sentence architecture: preference for subordination vs. coordination; long, complex periods vs. clipped assertions.
+      • Lexical signature: whether you favour Latinate/formal diction or Anglo-Saxon/plain diction; how you use intensifiers and hedges.
+      • Attitude markers: how explicitly you signal evaluation, irony, enthusiasm, scepticism.
+      • Rhythm: how you vary sentence length and where you place emphasis.
+
+      Avoiding pastiche and mimicry: imitation is a useful learning strategy, but mature writing transcends imitation. Voice is found when technical decisions become automatic and choices are driven by intended effect.
+
+      Revising for voice:
+      1. Read aloud — rhythm and naturalness are audible before they are visible.
+      2. Mark every instance of a word used more than twice — vary or cut.
+      3. Identify your default sentence opener — vary it deliberately.
+      4. Find the sentence you are most pleased with — it is probably a signpost to your emerging voice.
+    common_errors:
+      - "Confusing complexity with sophistication — tortured syntax is not evidence of C2 proficiency"
+      - "Voice inconsistency within a text — sudden tonal shifts undermine credibility"
+      - "Over-relying on a single syntactic pattern (all sentences subject-verb-object)"
+
+  - id: c2_010
+    cefr_level: C2
+    skill: grammar
+    topic: modality_full_spectrum
+    content: |
+      C2 users command the full modal system — epistemic, deontic, dynamic — and understand how context, word order, and lexical choice shift modal meaning.
+
+      Modal scale — epistemic (probability/certainty):
+      must > should/ought to > will > would > may > might > could
+      "It must be him." (high certainty) → "It might be him." (low probability)
+
+      Deontic modality (obligation/permission):
+      must/have to (obligation) > should/ought to (advice) > may/can (permission)
+      "You must submit by Friday." (obligation, no choice)
+      "You should submit early." (advice, choice remains)
+      "You may submit electronically." (permission granted)
+
+      Dynamic modality (ability/willingness):
+      can (ability) / will (willingness) / would (habitual past)
+      "Can you swim?" (ability) / "Will you help?" (willingness) / "As a child, he would walk for miles." (habitual)
+
+      Epistemic must vs. have to:
+      "She must be exhausted." = logical deduction (epistemic)
+      "She has to be exhausted." = same in American English; in British English, 'must' is preferred for deduction.
+
+      Negative modals — important distinctions:
+      • mustn't = prohibition (you are not allowed)
+      • don't have to = absence of obligation (not necessary, but allowed)
+      "You mustn't sign anything." ≠ "You don't have to sign anything."
+    common_errors:
+      - "Confusing 'mustn't' (prohibition) and 'don't have to' (no obligation)"
+      - "Using 'must' for past deduction: *He must arrive yesterday → He must have arrived yesterday"
+      - "Double modal: *You might could → not standard in formal English"
+
+  - id: c2_011
+    cefr_level: C2
+    skill: vocabulary
+    topic: false_friends_across_registers
+    content: |
+      False friends are words that look or sound similar to words in another language but differ in meaning. For advanced learners, false friends also exist within English across registers and varieties.
+
+      Between English and French (relevant for Francophone learners):
+      • actually ≠ actuellement → actually = "in fact / in reality"; actuellement (French) = "currently/at present"
+      • eventually ≠ éventuellement → eventually = "in the end, after a long time"; éventuellement = "possibly"
+      • sensible ≠ sensible (French) → sensible (English) = "reasonable/wise"; French sensible = "sensitive"
+      • library ≠ librairie → library = a place to borrow books; librairie (French) = a bookshop
+      • demand ≠ demander → demand (English) = to insist/require forcefully; demander (French) = to ask
+
+      Within English — register false friends:
+      • "sanction" = both to penalise AND to officially approve (context decides)
+      • "oversight" = both supervision AND a mistake/failure to notice
+      • "inflammable" = the same as "flammable" (in- here is intensifying, not negating)
+      • "peruse" formally = to read carefully/thoroughly; often misused to mean 'skim'
+    common_errors:
+      - "Using 'actually' to mean 'currently': *I am actually studying at university → I am currently studying"
+      - "Using 'eventually' to mean 'possibly': *Eventually she might come → Possibly she might come"
+      - "Misreading 'oversight' as supervision when context implies error, or vice versa"
+
+  - id: c2_012
+    cefr_level: C2
+    skill: writing
+    topic: punctuation_advanced
+    content: |
+      Mastery of advanced punctuation signals a C2 user's command of prose rhythm, emphasis, and syntactic structure.
+
+      Semicolon (;):
+      • Joins two independent clauses more closely than a full stop: "The results were ambiguous; further testing is required."
+      • Separates complex list items that themselves contain commas: "Delegates attended from Paris, France; Geneva, Switzerland; and Brussels, Belgium."
+
+      Colon (:):
+      • Introduces a list, explanation, or elaboration: "There are three options: revise, reject, or accept."
+      • After a complete clause introducing a clause: "The conclusion is clear: the hypothesis is not supported."
+      • In British English, the clause after a colon typically begins with a lower-case letter (unlike some American styles).
+
+      Em dash (—):
+      • Signals interruption or strong parenthetical — like this — within a sentence.
+      • More emphatic than a comma, less formal than parentheses.
+      • "The evidence — all twelve studies — pointed in the same direction."
+
+      Parentheses (): softer interruption, supplementary information.
+      Square brackets []: editorial interpolation in quotations: "He [the Prime Minister] denied any involvement."
+      Ellipsis (…): omission in quotation or trailing off in speech/prose.
+      Slash (/): alternatives (and/or), fractions, in URLs.
+    common_errors:
+      - "Using a comma splice instead of semicolon or full stop: *'I came, I saw, I conquered' — acceptable as literary device; not in formal prose"
+      - "Colon after incomplete clause: *'Three of the: delegates left' ✗ — the clause before the colon must be complete"
+      - "Overusing em dashes — they lose emphatic force when every sentence has one"

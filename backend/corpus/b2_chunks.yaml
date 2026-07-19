@@ -1,0 +1,537 @@
+# B2 Pedagogical Corpus — 15 chunks
+# Upper-intermediate. Complex grammar, academic vocabulary, advanced TOEIC strategies.
+
+chunks:
+
+  - id: b2_001
+    cefr_level: B2
+    skill: grammar
+    topic: second_conditional
+    content: |
+      The second conditional expresses hypothetical or unreal present/future situations.
+
+      FORM: If + past simple, would + base verb
+
+      Use for:
+      1. Unreal / hypothetical present situations (opposite of reality):
+         "If I were rich, I would travel the world." (I am not rich)
+      2. Unlikely future situations:
+         "If she applied for the job, she would probably get it." (she probably won't apply)
+      3. Giving advice politely:
+         "If I were you, I would talk to your manager." (standard set phrase)
+
+      NOTE: Use 'were' for all persons (including I/he/she/it) in formal writing:
+      "If I were in your position..." (NOT "If I was..." in formal contexts)
+      "If he were to resign..." (formal / hypothetical)
+
+      CONTRAST with first conditional:
+      1st: "If I have time, I will call you." (real possibility)
+      2nd: "If I had time, I would call you." (I don't have time — hypothetical)
+
+      WOULD can be replaced with could / might for less certainty:
+      "If they offered me the job, I might accept." (less certain than 'would accept')
+    common_errors:
+      - "Using 'would' in the if-clause: *If I would be rich → If I were/was rich"
+      - "Mixing first and second: *If I have the money, I would buy it → If I had the money / If I have the money, I will buy it"
+      - "Using 'was' in formal written English: write 'were' for subjunctive"
+
+  - id: b2_002
+    cefr_level: B2
+    skill: grammar
+    topic: third_conditional
+    content: |
+      The third conditional expresses hypothetical situations in the past — things that did not happen.
+
+      FORM: If + past perfect (had + pp), would have + past participle
+
+      Use for:
+      • Imagining alternative past outcomes (regrets, criticism, speculation):
+        "If I had studied harder, I would have passed the exam." (I didn't study; I failed)
+        "If they had left earlier, they wouldn't have missed the flight." (they didn't leave early)
+
+      MIXED CONDITIONALS:
+      Sometimes a past condition has a present result (or a present condition had a past result):
+
+      Past condition → Present result:
+      "If I had chosen a different career, I would be happier now."
+      (past choice affecting present state)
+
+      Present condition → Past result:
+      "If she were more organised, she wouldn't have missed the deadline."
+      (present character affecting past event)
+
+      SUMMARY TABLE:
+      Condition            | If-clause              | Main clause
+      Present/future real  | present simple         | will + base
+      Present unreal       | past simple            | would + base
+      Past unreal          | past perfect           | would have + pp
+    common_errors:
+      - "Incorrect form: *If I would have studied → If I had studied"
+      - "Using 'would' in if-clause: *If I would have known → If I had known"
+      - "Forgetting 'have' in main clause: *I would passed → I would have passed"
+
+  - id: b2_003
+    cefr_level: B2
+    skill: grammar
+    topic: past_perfect
+    content: |
+      The past perfect (had + past participle) describes an action that was completed before another past action.
+
+      FORM: had + past participle (same for all persons)
+
+      Use when:
+      1. Sequencing two past events (the earlier one uses past perfect):
+         "When I arrived at the station, the train had already left."
+         (First: the train left. Then: I arrived.)
+      2. Reported speech with past reporting verb (backshift from past simple):
+         "She said she had worked there for ten years."
+      3. Third conditional (if-clause):
+         "If I had known, I would have acted differently."
+      4. After expressions: by the time, when, after, before, as soon as:
+         "By the time the meeting started, everyone had received the agenda."
+
+      CONTRAST:
+      "I had dinner when he arrived."
+      → ambiguous — could mean before or at the same time
+      "I had had dinner when he arrived."
+      → clearly dinner was finished before he arrived
+
+      The past perfect is NOT needed when the sequence is already clear:
+      "I finished my work and then went home." (clear sequence with 'and then' — past simple is fine)
+    common_errors:
+      - "Using past perfect for all past events indiscriminately"
+      - "Forming incorrectly: *I have had finished → I had finished"
+      - "Forgetting the contrast with simple past: choosing past perfect when sequence is already established by a connector"
+
+  - id: b2_004
+    cefr_level: B2
+    skill: grammar
+    topic: inversion_emphasis
+    content: |
+      Inversion (placing the auxiliary before the subject) is used for emphasis and formality.
+      It is common in advanced written English and formal speech.
+
+      INVERSION WITH NEGATIVE ADVERBIALS:
+      When a negative or restrictive adverb starts the sentence, invert subject and auxiliary.
+
+      Never + have I seen such dedication.  → "Never have I seen such dedication."
+      Rarely + does she make mistakes.       → "Rarely does she make mistakes."
+      Seldom + have they disagreed.          → "Seldom have they disagreed."
+      Not only + did he miss the meeting,    → "Not only did he miss the meeting, but he also forgot to inform his team."
+      Hardly + had we started when...        → "Hardly had we started when the alarm went off."
+      No sooner + had he left than...        → "No sooner had he left than the phone rang."
+      Under no circumstances + should you    → "Under no circumstances should you share your password."
+      Only when/after/by + inversion         → "Only when he explained did I understand."
+
+      SO/SUCH + inversion (result clause):
+      "So complicated was the situation that nobody knew what to do."
+
+      Note: Inversion applies to the auxiliary verb only (do/does/did, have/has/had, is/are/was, will, would, can, etc.).
+      The main verb stays in its normal position.
+    common_errors:
+      - "Inverting without an auxiliary: *Never I have seen → Never have I seen"
+      - "Using inversion in normal sentences without a negative adverbial"
+      - "Forgetting that inversion signals formality — avoid in informal writing"
+
+  - id: b2_005
+    cefr_level: B2
+    skill: grammar
+    topic: nominalisation
+    content: |
+      Nominalisation converts verbs or adjectives into nouns. It makes writing more formal,
+      concise, and impersonal — essential for B2+ academic and business writing.
+
+      COMMON PATTERNS:
+      • Verb → Noun using suffix:
+        decide → decision | develop → development | achieve → achievement
+        fail → failure | analyse → analysis | investigate → investigation
+        reduce → reduction | produce → production | discuss → discussion
+
+      • Adjective → Noun:
+        important → importance | efficient → efficiency | effective → effectiveness
+        significant → significance | responsible → responsibility
+
+      EFFECT on sentence style:
+
+      Verbal (informal):
+        "The manager decided to increase production because the company failed to meet targets."
+      Nominalised (formal):
+        "The manager's decision to increase production came in response to the company's failure to meet targets."
+
+      When to use:
+      ✓ Academic reports, business memos, formal emails
+      ✗ Everyday conversation (too distant and impersonal)
+
+      TOEIC context: Nominalisation appears in reading passages (formal business texts).
+      Recognising it helps comprehension of dense texts.
+    common_errors:
+      - "Over-nominalising in informal writing — it sounds unnatural"
+      - "Wrong suffix: *arguement → argument | *managment → management"
+      - "Confusing verb/noun forms in context: 'The analysis of data was complete' (noun) vs 'We analysed the data' (verb)"
+
+  - id: b2_006
+    cefr_level: B2
+    skill: vocabulary
+    topic: hedging_language
+    content: |
+      Hedging softens claims, expresses appropriate uncertainty, and signals academic caution.
+      It is essential for B2+ writing and for comprehending formal texts.
+
+      MODAL VERBS FOR HEDGING:
+      • may / might — possibility: "This approach may have unintended consequences."
+      • could — possibility (slightly more distant): "The results could indicate a systemic problem."
+      • should — expectation: "This should lead to improved outcomes."
+      • would — conditional / more tentative: "This would suggest that the hypothesis is correct."
+
+      VERBS THAT HEDGE:
+      • appear / seem: "The data appears to support this conclusion."
+      • tend to: "Companies tend to underestimate implementation costs."
+      • suggest / indicate / imply: "The results suggest a correlation between X and Y."
+
+      ADVERBS THAT HEDGE:
+      • apparently, seemingly, arguably, possibly, probably, likely
+      • to some extent, in some cases, under certain conditions
+
+      PHRASES:
+      • It is possible that... / It seems that... / There is evidence to suggest that...
+      • In most cases, ... / Generally speaking, ...
+      • It could be argued that... (introducing a counter-argument you will then refute)
+
+      Contrast: "The data proves X." (too strong, rarely appropriate in research)
+      vs "The data suggests X." (appropriate hedging)
+    common_errors:
+      - "Using 'prove' or 'show' where 'suggest' or 'indicate' is more appropriate"
+      - "Double hedging: 'It might possibly perhaps be...' — choose one hedge"
+      - "Hedging when stating established facts: 'Water may consist of hydrogen and oxygen' — don't hedge facts"
+
+  - id: b2_007
+    cefr_level: B2
+    skill: vocabulary
+    topic: academic_vocabulary_awl
+    content: |
+      The Academic Word List (AWL) contains vocabulary that appears frequently in academic texts.
+      B2 learners should recognise and use the most common AWL words.
+
+      HIGH-FREQUENCY AWL WORDS (with collocations):
+
+      VERBS:
+      • analyse (analysis, analytical) — analyse data / conduct an analysis
+      • assess (assessment) — assess the situation / risk assessment
+      • establish (establishment) — establish a link / well-established
+      • indicate (indication) — indicate that / strong indication of
+      • obtain — obtain results / obtain permission
+      • identify — identify a problem / identify key factors
+      • demonstrate — demonstrate skills / demonstrate that
+      • evaluate — evaluate performance / thorough evaluation
+      • implement (implementation) — implement a strategy / successful implementation
+      • require — require evidence / mandatory requirement
+
+      NOUNS:
+      • approach, aspect, assumption, benefit, concept, consequence, context, contrast,
+        element, estimate, factor, function, impact, interpretation, method, outcome,
+        percentage, period, policy, principle, process, strategy, structure, theory, trend
+
+      ADJECTIVES:
+      • significant, relevant, appropriate, consistent, initial, major, previous, available,
+        similar, positive, negative, overall, specific, individual, regional, financial
+
+      TIP: In TOEIC reading, understanding these words lets you navigate complex business texts.
+    common_errors:
+      - "Confusing analyse/analysis: 'We will analysis the data' → 'We will analyse the data'"
+      - "Overusing 'big' / 'important' — replace with 'significant', 'substantial', 'considerable'"
+      - "Wrong preposition after key words: 'impact on' (NOT 'impact to') | 'focus on' | 'depend on'"
+
+  - id: b2_008
+    cefr_level: B2
+    skill: vocabulary
+    topic: business_vocabulary_toeic
+    content: |
+      TOEIC tests business vocabulary in realistic workplace contexts.
+
+      FINANCE AND BUSINESS:
+      • revenue / income / profit / loss / turnover
+      • expenses / overhead costs / budget / forecast
+      • investment / return on investment (ROI) / portfolio
+      • merge / acquisition / takeover / partnership / joint venture
+      • fiscal year / quarterly report / annual report / balance sheet
+
+      HUMAN RESOURCES:
+      • recruit / hire / headhunt / interview candidates
+      • induction / onboarding / probationary period
+      • appraisal / performance review / feedback
+      • redundancy / lay off / restructure / downsize
+      • benefits package / pension / health insurance / overtime pay
+
+      OPERATIONS AND LOGISTICS:
+      • supply chain / procurement / outsource / subcontract
+      • inventory / stock / warehouse / dispatch / delivery
+      • lead time / backorder / out of stock / restock
+
+      MARKETING:
+      • target audience / market segment / demographics
+      • brand awareness / market share / competitive advantage
+      • launch a product / roll out / phase out
+      • promotional campaign / endorsement / testimonial
+
+      Key TOEIC collocation: "submit a report", "place an order", "meet a deadline",
+      "launch a campaign", "sign a contract", "close a deal"
+    common_errors:
+      - "Revenue vs profit: revenue = all money received; profit = revenue minus costs"
+      - "Lay off vs dismiss: lay off = job cut due to company reasons; dismiss = fired for personal reasons"
+      - "'Make a research' → 'conduct research' or 'do research' (research is uncountable)"
+
+  - id: b2_009
+    cefr_level: B2
+    skill: vocabulary
+    topic: discourse_markers_b2
+    content: |
+      B2 discourse markers create sophisticated flow in writing and formal speech.
+
+      ADDING (more formal than 'and'):
+      • Furthermore, / Moreover, / In addition to this, / What is more,
+      • Not only that, but... / Besides,
+
+      CONCEDING AND CONTRASTING:
+      • Nevertheless, / Nonetheless, / Even so, — (admit a point, then contrast)
+        "The project was expensive. Nevertheless, it delivered excellent results."
+      • Admittedly, ... (concede a point you will then counter)
+        "Admittedly, the approach has drawbacks. However, the benefits outweigh them."
+      • Whereas / While (simultaneous contrast in one sentence):
+        "Whereas older methods were time-consuming, the new system is efficient."
+
+      RESULT / CONSEQUENCE:
+      • Consequently, / Therefore, / As a result, / Hence, (formal)
+      • This led to... / This resulted in... / This gave rise to...
+
+      ILLUSTRATION:
+      • For instance, / For example, — (at start or mid-sentence)
+      • Such as... / Including... (within a clause, no full stop before)
+
+      REFORMULATION:
+      • In other words, / That is to say, / Put simply,
+      • To put it another way,
+
+      CONCLUSION:
+      • To conclude, / In conclusion, / All in all, / On the whole, / To sum up,
+
+      Tip: Vary your discourse markers. Do not use 'however' or 'in addition' for every sentence.
+    common_errors:
+      - "Placing 'however' mid-sentence without commas: *The plan however failed → The plan, however, failed"
+      - "Confusing 'while' (simultaneous contrast) with 'meanwhile' (simultaneous actions): 'While she wrote, he edited' vs 'She wrote. Meanwhile, he edited.'"
+      - "Overusing 'firstly, secondly, thirdly' — switch to 'to begin with', 'furthermore', 'finally'"
+
+  - id: b2_010
+    cefr_level: B2
+    skill: reading
+    topic: toeic_reading_part7_strategies
+    content: |
+      TOEIC Part 7 — Reading Comprehension (single, double, and triple passages)
+
+      TIME MANAGEMENT (total 54-55 min for Parts 5+6+7):
+      • Aim: ~1 min per question. Part 7 has 48-54 questions → ~48 min.
+      • Single passage: ~2.5 min per set
+      • Multiple passage: ~4 min per set (you must cross-reference documents)
+
+      STRATEGY — Question-first reading:
+      1. Read the questions (not the options) before the passage.
+      2. Identify question types: factual detail, inference, vocabulary, purpose, NOT TRUE.
+      3. Locate the relevant section of the passage for each question.
+
+      QUESTION TYPES:
+      • Main idea / Purpose: usually answerable from first + last paragraph.
+      • Detail / Factual: scan for specific information (numbers, names, dates).
+      • Vocabulary in context: choose the word that fits the context, not just the dictionary meaning.
+      • Inference / Implied meaning: the answer is not stated directly — reason from the text.
+      • NOT TRUE / EXCEPT: find the THREE correct statements; the odd one out is the answer.
+        (These take more time — do them last if time is short.)
+
+      MULTIPLE PASSAGE TIP:
+      Each passage contains different but related information.
+      Some questions require you to connect information across passages.
+      Look for names, dates, or amounts that appear in both documents.
+    common_errors:
+      - "Reading the full passage before looking at questions — inefficient"
+      - "Choosing 'NOT TRUE' answers that are directly stated in the text (correct statements, not the answer)"
+      - "Spending more than 2 minutes on one question — mark and skip, return later"
+
+  - id: b2_011
+    cefr_level: B2
+    skill: grammar
+    topic: complex_relative_clauses
+    content: |
+      At B2, relative clauses become more complex. Master these advanced patterns.
+
+      PREPOSITION + WHICH / WHOM:
+      In formal writing, prepositions come before the relative pronoun:
+      "The company for which I work is expanding." (formal)
+      "The company which I work for is expanding." (informal)
+      "The colleague with whom I share an office is very organised." (formal)
+
+      WHAT as a relative pronoun (= the thing/things that):
+      "What I find most challenging is time management." (= The thing that I find most challenging)
+      "I will tell you what I know."
+      Note: 'what' cannot follow a specific noun.
+      "The book what I read" ✗ → "The book that I read" ✓
+
+      QUANTIFIER + OF + WHICH / WHOM:
+      "We received fifty applications, most of which were very strong."
+      "She has three colleagues, none of whom speaks French."
+
+      RELATIVE CLAUSES REDUCED TO PARTICIPLE PHRASES (formal/literary):
+      "The report published last month shows strong growth."
+      (= The report that was published last month)
+      "The delegate representing France gave an excellent speech."
+      (= The delegate who is representing France)
+    common_errors:
+      - "Using 'which' for the whole previous clause informally: OK in speech, avoid in formal writing"
+      - "'The thing what' → the thing that / what (not both)"
+      - "Wrong quantifier agreement: *most of who → most of whom (formal) or who (informal)"
+
+  - id: b2_012
+    cefr_level: B2
+    skill: writing
+    topic: formal_email_b2
+    content: |
+      B2 formal emails require precise language, appropriate register, and clear structure.
+
+      REGISTER — formal markers:
+      • Full forms not contractions: I am (not I'm), do not (not don't), cannot (not can't)
+      • Formal greetings: Dear Mr/Ms [Surname], (never "Hey" or "Hi" in formal emails)
+      • Formal openings: "I am writing with reference to..." / "Further to our conversation of..."
+        "I am writing to enquire about..." / "I would like to bring to your attention..."
+
+      MAKING REQUESTS (politely and formally):
+      • "I would be grateful if you could..." / "I would appreciate it if you could..."
+      • "Could you please provide..." / "Would it be possible to..."
+      • "I would like to request..."
+
+      APOLOGISING:
+      • "I apologise for any inconvenience caused."
+      • "I regret to inform you that..."
+      • "Please accept our sincerest apologies for..."
+
+      CLOSING:
+      • "I look forward to hearing from you at your earliest convenience."
+      • "Please do not hesitate to contact me should you require further information."
+      • Yours sincerely, (when you know the name) | Yours faithfully, (when you don't)
+
+      LENGTH AND STRUCTURE:
+      Formal email = 150-250 words | Clear paragraph breaks | One topic per paragraph
+    common_errors:
+      - "Using casual language in formal emails: 'Hey, could you...'"
+      - "Mixing 'Yours sincerely' with 'Dear Sir/Madam' — if you don't know the name, use 'Yours faithfully'"
+      - "Vague closing: 'I hope to hear from you.' → 'I look forward to your response.'"
+
+  - id: b2_013
+    cefr_level: B2
+    skill: vocabulary
+    topic: connotation_register
+    content: |
+      At B2, word choice matters beyond basic meaning. Understanding connotation and register
+      prevents awkward or inappropriate language.
+
+      REGISTER (level of formality):
+      Informal → Neutral → Formal
+
+      Examples:
+      • get → obtain → procure
+      • buy → purchase → acquire
+      • use → utilise → employ (note: 'utilise' = use effectively, not just 'use')
+      • help → assist → facilitate
+      • talk about → discuss → deliberate on
+      • find out → discover → ascertain (very formal)
+      • make → produce → manufacture (depends on context)
+      • end → conclude → terminate (terminate implies finality/force)
+
+      CONNOTATION (positive/negative emotional tone):
+      Positive: slim, assertive, determined, thrifty, original
+      Negative: skinny, aggressive, stubborn, miserly, eccentric
+      Neutral: thin, confident, persistent, economical, unusual
+
+      In TOEIC writing: choose neutral or positive connotations in professional contexts.
+      Describing a colleague as "stubborn" is negative; "determined" is positive.
+
+      COLLOCATIONS AND REGISTER:
+      'Conduct' is formal → "conduct a survey" (NOT "do a survey" in formal reports, though both are correct)
+      'Carry out' is neutral → "carry out an investigation"
+      'Look into' is informal → use in emails, not formal reports
+    common_errors:
+      - "Using 'utilise' instead of 'use' everywhere — over-formality when 'use' is correct"
+      - "Choosing a word by its rough meaning without checking connotation: 'cheap' vs 'affordable'"
+      - "'This information is confidential and should not be transmitted' — 'transmitted' may sound odd; prefer 'shared' or 'disclosed'"
+
+  - id: b2_014
+    cefr_level: B2
+    skill: listening
+    topic: toeic_listening_part4
+    content: |
+      TOEIC Part 4 — Short Talks (10 talks × 3 questions = 30 questions)
+
+      Each talk is a monologue: announcement, recorded message, advertisement, news report,
+      meeting excerpt, or weather forecast. You hear it once.
+
+      BEFORE YOU LISTEN:
+      • Read all 3 questions AND answer options quickly.
+      • Predict the talk type from the questions (who is speaking? what is the context?).
+
+      WHILE LISTENING — listen for:
+      • Purpose of the message (first 1-2 sentences usually tell you)
+      • Specific details: numbers, times, locations, names, conditions
+      • What the speaker wants the listener to DO (call, visit, press a number, etc.)
+
+      COMMON TALK TYPES AND WHAT TO LISTEN FOR:
+      • Announcement: reason + action required by listener
+      • Recorded message (voicemail/phone menu): options + numbers to press
+      • Advertisement: product/service name + unique selling point + contact info
+      • News report: who + what + when + where
+
+      GRAPHIC QUESTIONS: Some questions pair a chart/map/schedule with the audio.
+      Strategy: look at the graphic FIRST during the preparation time.
+
+      SCORE TARGET B1→B2: 80%+ on Part 4.
+
+      KEY LANGUAGE TO RECOGNISE:
+      "Please be advised that..." / "We would like to remind you that..."
+      "Due to..." / "As a result of..." / "In the event of..."
+    common_errors:
+      - "Trying to write notes — too slow; listen and answer mentally"
+      - "Missing the first sentence — it usually gives the context for all 3 questions"
+      - "Choosing answers with words from the recording used in a misleading way (TOEIC's most common trap)"
+
+  - id: b2_015
+    cefr_level: B2
+    skill: grammar
+    topic: cleft_sentences
+    content: |
+      Cleft sentences split a simple sentence into two clauses to add emphasis or focus.
+      They are common in formal writing and advanced spoken English.
+
+      IT-CLEFTS (most common):
+      "It was John who called you." (not someone else)
+      "It is hard work that leads to success." (not luck)
+      "It was in 2022 that the policy was introduced."
+
+      Structure: It + be + [focused element] + that/who + rest of sentence
+
+      WHAT-CLEFTS (pseudo-clefts):
+      "What I need is more time." (= The thing I need is more time)
+      "What surprised me most was his reaction."
+
+      Reversed pseudo-cleft:
+      "More time is what I need." (emphasises 'more time')
+
+      ALL-CLEFTS (exclusive focus):
+      "All I want is a simple explanation." (nothing more, nothing less)
+      "All they need to do is follow the instructions."
+
+      PURPOSE:
+      Cleft sentences allow you to highlight specific information without changing the basic meaning.
+      They add variety and sophistication to writing.
+
+      "John called you." (neutral)
+      "It was John who called you." (emphasis: not someone else — it was JOHN)
+      "What John did was call you." (emphasis: he called — that was his action)
+    common_errors:
+      - "Wrong pronoun: 'It was him who...' → 'It was he who...' (formal), though 'him' is acceptable informally"
+      - "Using 'which' instead of 'that' in it-clefts for people: *It was John which called → who called"
+      - "Over-using clefts — they should be used for emphasis, not in every sentence"
