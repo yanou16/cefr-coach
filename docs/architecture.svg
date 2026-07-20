@@ -1,0 +1,151 @@
+<svg viewBox="0 0 920 510" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <filter id="sk" x="-3%" y="-3%" width="106%" height="106%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04 0.04" numOctaves="3" seed="11" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#475569"/>
+    </marker>
+    <marker id="arr-b" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#3b82f6"/>
+    </marker>
+  </defs>
+
+  <!-- Background -->
+  <rect width="920" height="510" fill="#FFFDF5" rx="14"/>
+
+  <!-- ══ TITLE ══ -->
+  <text x="460" y="34" text-anchor="middle" font-size="18" font-weight="700" fill="#12132a" letter-spacing="-0.3">CEFR Coach — System Architecture</text>
+
+  <!-- ══════════════════════════════════════════════════════
+       LAYER 1 · BROWSER / CLIENT
+  ══════════════════════════════════════════════════════ -->
+  <g filter="url(#sk)">
+    <rect x="40" y="50" width="840" height="82" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2.5"/>
+  </g>
+  <!-- Layer label -->
+  <text x="56" y="72" font-size="9.5" font-weight="700" fill="#3b82f6" letter-spacing="1.6">CLIENT — BROWSER</text>
+  <!-- Content -->
+  <text x="460" y="95" text-anchor="middle" font-size="13" font-weight="700" fill="#1d4ed8">React 18 + TypeScript + Vite</text>
+  <text x="460" y="114" text-anchor="middle" font-size="10.5" fill="#3730a3">State machine: landing → assess → practice → exercise → feedback → chat</text>
+  <text x="200" y="124" text-anchor="middle" font-size="10" fill="#3730a3">LandingPage · App · ExerciseCard</text>
+  <text x="460" y="124" text-anchor="middle" font-size="10" fill="#3730a3">FeedbackCard · ChatWindow</text>
+  <text x="720" y="124" text-anchor="middle" font-size="10" fill="#3730a3">useAppReducer hook · api/client.ts</text>
+
+  <!-- Nginx badge -->
+  <rect x="800" y="56" width="70" height="22" rx="4" fill="#dbeafe" stroke="#3b82f6" stroke-width="1"/>
+  <text x="835" y="71" text-anchor="middle" font-size="9" font-weight="700" fill="#1d4ed8">Nginx :80</text>
+
+  <!-- Arrow down: Browser → FastAPI -->
+  <line x1="460" y1="134" x2="460" y2="162" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+  <text x="470" y="152" font-size="10" fill="#64748b" font-style="italic">HTTP REST · fetch()</text>
+
+  <!-- ══════════════════════════════════════════════════════
+       LAYER 2 · FASTAPI BACKEND
+  ══════════════════════════════════════════════════════ -->
+  <g filter="url(#sk)">
+    <rect x="40" y="165" width="840" height="130" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2.5"/>
+  </g>
+  <text x="56" y="187" font-size="9.5" font-weight="700" fill="#16a34a" letter-spacing="1.6">FASTAPI BACKEND — Python 3.13 · port 8001</text>
+
+  <!-- Service box: level_service -->
+  <g filter="url(#sk)">
+    <rect x="58" y="196" width="190" height="82" rx="7" fill="#fff" stroke="#16a34a" stroke-width="1.8"/>
+  </g>
+  <text x="153" y="217" text-anchor="middle" font-size="11" font-weight="700" fill="#14532d">level_service.py</text>
+  <text x="153" y="233" text-anchor="middle" font-size="9.5" fill="#166534">POST /classify</text>
+  <text x="153" y="248" text-anchor="middle" font-size="9.5" fill="#166534">calls HF Space via</text>
+  <text x="153" y="262" text-anchor="middle" font-size="9.5" fill="#166534">gradio_client.Client</text>
+  <text x="153" y="272" text-anchor="middle" font-size="9.5" fill="#166534">rolling window smoother</text>
+
+  <!-- Service box: rag_service -->
+  <g filter="url(#sk)">
+    <rect x="268" y="196" width="190" height="82" rx="7" fill="#fff" stroke="#0891b2" stroke-width="1.8"/>
+  </g>
+  <text x="363" y="217" text-anchor="middle" font-size="11" font-weight="700" fill="#0e7490">rag_service.py</text>
+  <text x="363" y="233" text-anchor="middle" font-size="9.5" fill="#155e75">embed query (ONNX local)</text>
+  <text x="363" y="248" text-anchor="middle" font-size="9.5" fill="#155e75">pre-filter by level L/L+1</text>
+  <text x="363" y="263" text-anchor="middle" font-size="9.5" fill="#155e75">vector similarity search</text>
+  <text x="363" y="278" text-anchor="middle" font-size="9.5" fill="#155e75">returns top-K chunks</text>
+
+  <!-- Service box: tutor_service -->
+  <g filter="url(#sk)">
+    <rect x="478" y="196" width="190" height="82" rx="7" fill="#fff" stroke="#a855f7" stroke-width="1.8"/>
+  </g>
+  <text x="573" y="217" text-anchor="middle" font-size="11" font-weight="700" fill="#7e22ce">tutor_service.py</text>
+  <text x="573" y="233" text-anchor="middle" font-size="9.5" fill="#6b21a8">POST /exercise  POST /feedback</text>
+  <text x="573" y="248" text-anchor="middle" font-size="9.5" fill="#6b21a8">builds system prompt</text>
+  <text x="573" y="263" text-anchor="middle" font-size="9.5" fill="#6b21a8">injects RAG context</text>
+  <text x="573" y="278" text-anchor="middle" font-size="9.5" fill="#6b21a8">parses structured JSON</text>
+
+  <!-- Service box: adaptive_loop -->
+  <g filter="url(#sk)">
+    <rect x="688" y="196" width="178" height="82" rx="7" fill="#fff" stroke="#ea580c" stroke-width="1.8"/>
+  </g>
+  <text x="777" y="217" text-anchor="middle" font-size="11" font-weight="700" fill="#9a3412">adaptive_loop.py</text>
+  <text x="777" y="233" text-anchor="middle" font-size="9.5" fill="#7c2d12">GET /session/status</text>
+  <text x="777" y="248" text-anchor="middle" font-size="9.5" fill="#7c2d12">tracks exercise count</text>
+  <text x="777" y="263" text-anchor="middle" font-size="9.5" fill="#7c2d12">streak detection</text>
+  <text x="777" y="278" text-anchor="middle" font-size="9.5" fill="#7c2d12">orchestrates phase flow</text>
+
+  <!-- Arrows down to external services -->
+  <!-- level_service → HF Space -->
+  <line x1="153" y1="297" x2="153" y2="334" stroke="#475569" stroke-width="1.8" marker-end="url(#arr)"/>
+  <!-- rag_service → ChromaDB -->
+  <line x1="363" y1="297" x2="363" y2="334" stroke="#475569" stroke-width="1.8" marker-end="url(#arr)"/>
+  <!-- tutor_service → Groq -->
+  <line x1="573" y1="297" x2="573" y2="334" stroke="#475569" stroke-width="1.8" marker-end="url(#arr)"/>
+
+  <!-- ══════════════════════════════════════════════════════
+       LAYER 3 · EXTERNAL SERVICES
+  ══════════════════════════════════════════════════════ -->
+  <text x="56" y="330" font-size="9.5" font-weight="700" fill="#999" letter-spacing="1.6">EXTERNAL SERVICES</text>
+
+  <!-- HF Space box -->
+  <g filter="url(#sk)">
+    <rect x="48" y="338" width="210" height="95" rx="8" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+  </g>
+  <text x="153" y="361" text-anchor="middle" font-size="12" font-weight="700" fill="#9a3412">HuggingFace Space</text>
+  <text x="153" y="378" text-anchor="middle" font-size="10" fill="#7c2d12">yanou16/cefr-english-classifier</text>
+  <text x="153" y="394" text-anchor="middle" font-size="10" fill="#7c2d12">Qwen2.5-1.5B + QLoRA</text>
+  <text x="153" y="410" text-anchor="middle" font-size="10" fill="#7c2d12">Gradio inference API</text>
+  <text x="153" y="426" text-anchor="middle" font-size="10" fill="#7c2d12">returns level + confidence</text>
+
+  <!-- ChromaDB box -->
+  <g filter="url(#sk)">
+    <rect x="268" y="338" width="210" height="95" rx="8" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+  </g>
+  <text x="373" y="361" text-anchor="middle" font-size="12" font-weight="700" fill="#0e7490">ChromaDB (local)</text>
+  <text x="373" y="378" text-anchor="middle" font-size="10" fill="#155e75">persistent volume</text>
+  <text x="373" y="394" text-anchor="middle" font-size="10" fill="#155e75">82 YAML corpus chunks</text>
+  <text x="373" y="410" text-anchor="middle" font-size="10" fill="#155e75">MiniLM-L6-v2 ONNX</text>
+  <text x="373" y="426" text-anchor="middle" font-size="10" fill="#155e75">embeddings computed locally</text>
+
+  <!-- Groq / OpenAI box -->
+  <g filter="url(#sk)">
+    <rect x="488" y="338" width="210" height="95" rx="8" fill="#fdf4ff" stroke="#a855f7" stroke-width="2"/>
+  </g>
+  <text x="593" y="361" text-anchor="middle" font-size="12" font-weight="700" fill="#7e22ce">Groq → OpenAI</text>
+  <text x="593" y="378" text-anchor="middle" font-size="10" fill="#6b21a8">LLaMA 3.3-70B (D1–D7)</text>
+  <text x="593" y="394" text-anchor="middle" font-size="10" fill="#6b21a8">→ GPT-4o on July 21 (D8)</text>
+  <text x="593" y="410" text-anchor="middle" font-size="10" fill="#6b21a8">OpenAI-compatible API</text>
+  <text x="593" y="426" text-anchor="middle" font-size="10" fill="#6b21a8">swap = change .env only</text>
+
+  <!-- Docker Compose footer -->
+  <g filter="url(#sk)">
+    <rect x="40" y="448" width="840" height="48" rx="8" fill="#1e1e2e" stroke="#374151" stroke-width="1.5"/>
+  </g>
+  <text x="56" y="467" font-size="9.5" font-weight="700" fill="#9ca3af" letter-spacing="1.4">DOCKER COMPOSE</text>
+  <text x="460" y="485" text-anchor="middle" font-size="10.5" fill="#e5e7eb">nginx (frontend :80)  ·  fastapi (backend :8001)  ·  chromadb (volume: chroma_data)  ·  .env config</text>
+
+  <!-- Evals section (right side) -->
+  <g filter="url(#sk)">
+    <rect x="718" y="338" width="192" height="95" rx="8" fill="#f8fafc" stroke="#64748b" stroke-width="1.8"/>
+  </g>
+  <text x="814" y="361" text-anchor="middle" font-size="12" font-weight="700" fill="#334155">MLOps / Evals</text>
+  <text x="814" y="378" text-anchor="middle" font-size="10" fill="#475569">classifier_probes.py</text>
+  <text x="814" y="394" text-anchor="middle" font-size="10" fill="#475569">12 probes · 2 per level</text>
+  <text x="814" y="410" text-anchor="middle" font-size="10" fill="#475569">ragas_rag_eval.py</text>
+  <text x="814" y="426" text-anchor="middle" font-size="10" fill="#475569">4 RAGAS metrics</text>
+</svg>
