@@ -40,7 +40,8 @@ USE_MOCK  = os.environ.get("USE_MOCK_CLASSIFIER", "false").lower() == "true"
 def _get_client():
     from gradio_client import Client
     print(f"[level_service] Connecting to HF Space: {HF_SPACE}…")
-    client = Client(HF_SPACE, verbose=False)
+    # 120s timeout so cold-start HF Spaces (free tier) don't time out
+    client = Client(HF_SPACE, verbose=False, httpx_kwargs={"timeout": 120})
     print(f"[level_service] Connected.")
     return client
 
@@ -121,9 +122,15 @@ def classify(text: str) -> dict:
         client = _get_client()
         raw    = client.predict(text, api_name="/run")
     except Exception as e:
-        return {"error": f"Classifier error: {e}", "level": None, "confidence": None,
-                "probabilities": None, "processing_time_ms": None,
-                "low_confidence": False, "advanced_plus": False, "mock": False}
+        # Retry once — HF free Spaces need a warm-up call after sleep
+        try:
+            _get_client.cache_clear()
+            client = _get_client()
+            raw    = client.predict(text, api_name="/run")
+        except Exception as e2:
+            return {"error": f"Classifier error: {e2}", "level": None, "confidence": None,
+                    "probabilities": None, "processing_time_ms": None,
+                    "low_confidence": False, "advanced_plus": False, "mock": False}
 
     elapsed = round((time.time() - t0) * 1000, 1)
     level, conf = _parse_space_response(str(raw))

@@ -17,10 +17,13 @@ D4 (adaptive tutor):
     DELETE /session/{id}/reset → full adaptive-loop reset
 """
 
+import asyncio
 import os
 import time
+from contextlib import asynccontextmanager
 from uuid import uuid4
 
+import httpx
 from fastapi import FastAPI, HTTPException
 from fastapi.middleware.cors import CORSMiddleware
 
@@ -35,12 +38,36 @@ from app.services.tutor_service import generate_exercise, give_feedback, convers
 from app.services.adaptive_loop import get_session, reset_session as _reset_adaptive_session
 from app.observability import trace_classify
 
+# ── HF Space keep-alive ───────────────────────────────────────────────────────
+# HF free Spaces sleep after ~30 min. We ping every 25 min to keep it awake.
+
+_HF_SPACE_URL = "https://" + HF_REPO.replace("/", "-") + ".hf.space"
+
+async def _keepalive_loop():
+    await asyncio.sleep(10)  # let startup finish first
+    async with httpx.AsyncClient(timeout=15) as client:
+        while True:
+            try:
+                await client.get(_HF_SPACE_URL)
+                print(f"[keepalive] pinged {_HF_SPACE_URL}")
+            except Exception as e:
+                print(f"[keepalive] ping failed: {e}")
+            await asyncio.sleep(25 * 60)  # 25 minutes
+
+
+@asynccontextmanager
+async def lifespan(app: FastAPI):
+    asyncio.create_task(_keepalive_loop())
+    yield
+
+
 # ── App ───────────────────────────────────────────────────────────────────────
 
 app = FastAPI(
     title="CEFR Coach API",
     description="Adaptive English tutor powered by a fine-tuned CEFR classifier + GPT-5.6.",
     version="0.1.0",
+    lifespan=lifespan,
 )
 
 app.add_middleware(
