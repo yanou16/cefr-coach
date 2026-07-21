@@ -20,15 +20,12 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# ── Provider config (swap these 2 lines for prod) ─────────────────────────────
-LLM_BASE_URL = "https://api.groq.com/openai/v1"
-LLM_API_KEY  = os.environ.get("GROQ_API_KEY", "")
-LLM_MODEL    = "llama-3.3-70b-versatile"
-
-# Prod (uncomment on July 21):
-# LLM_BASE_URL = None                          # OpenAI default
-# LLM_API_KEY  = os.environ.get("OPENAI_API_KEY", "")
-# LLM_MODEL    = "gpt-4o"                      # or gpt-5.6 when available
+# ── Provider config — reads from env, falls back to Groq for local dev ────────
+LLM_API_KEY  = (os.environ.get("LLM_API_KEY")
+                or os.environ.get("OPENAI_API_KEY")
+                or os.environ.get("GROQ_API_KEY", ""))
+LLM_BASE_URL = os.environ.get("LLM_BASE_URL", "https://api.groq.com/openai/v1") or None
+LLM_MODEL    = os.environ.get("LLM_MODEL", "llama-3.3-70b-versatile")
 
 # ── Client ────────────────────────────────────────────────────────────────────
 
