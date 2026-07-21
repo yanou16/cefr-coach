@@ -10,7 +10,7 @@ Endpoints:
     DELETE /session/{id}    → reset rolling window
 
 D4 (adaptive tutor):
-    POST /exercise          → RAG + Groq/LLM exercise generation
+    POST /exercise          → RAG + GPT-5.6 exercise generation
     POST /feedback          → LLM feedback on learner answer
     POST /chat              → i+1 conversation turn
     GET  /session/{id}      → learner adaptive-loop state

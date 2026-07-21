@@ -149,9 +149,9 @@ export default function LandingPage({ onStart, theme, toggleTheme }: Props) {
           <span className="lp-cred-dot" />
           <div className="lp-cred-item">Krashen <em>i+1</em> method</div>
           <span className="lp-cred-dot" />
-          <div className="lp-cred-item">Qwen2.5 <em>QLoRA</em> fine-tuned</div>
+          <div className="lp-cred-item"><em>QLoRA</em> fine-tuned classifier</div>
           <span className="lp-cred-dot" />
-          <div className="lp-cred-item">LLaMA <em>3.3-70B</em> feedback</div>
+          <div className="lp-cred-item">OpenAI <em>GPT-5.6</em> feedback</div>
         </div>
       </div>
 
@@ -334,7 +334,7 @@ export default function LandingPage({ onStart, theme, toggleTheme }: Props) {
       {/* ── Footer ────────────────────────────────────────── */}
       <footer className="lp-footer">
         <span>CEFR Coach · Build Week 2026</span>
-        <span>Qwen2.5-1.5B + QLoRA · Krashen i+1 · ChromaDB RAG</span>
+        <span>QLoRA CEFR classifier · Krashen i+1 · ChromaDB RAG · OpenAI GPT-5.6</span>
       </footer>
 
     </div>

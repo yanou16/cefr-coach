@@ -9,10 +9,10 @@ Metrics:
 
 Usage:
   cd cefr-coach
-  pip install ragas datasets openai  # or groq-compatible
+  pip install ragas datasets openai
   python evals/ragas_rag_eval.py
 
-Set OPENAI_API_KEY (or LLM_BASE_URL + LLM_API_KEY for Groq) in .env before running.
+Set LLM_API_KEY (your OpenAI key) in .env before running.
 """
 
 import os, sys, json
@@ -36,9 +36,9 @@ from ragas.llms import LangchainLLMWrapper
 from langchain_openai import ChatOpenAI
 
 # ── Configure LLM for Ragas judge ────────────────────────────────────────────
-BASE_URL = os.getenv("LLM_BASE_URL")  # None → OpenAI; set for Groq
+BASE_URL = os.getenv("LLM_BASE_URL") or None  # None → default OpenAI endpoint
 API_KEY  = os.getenv("LLM_API_KEY") or os.getenv("OPENAI_API_KEY")
-MODEL    = os.getenv("LLM_MODEL", "gpt-4o")
+MODEL    = os.getenv("LLM_MODEL", "gpt-5.6")
 
 llm_kwargs = dict(model=MODEL, api_key=API_KEY, temperature=0)
 if BASE_URL:

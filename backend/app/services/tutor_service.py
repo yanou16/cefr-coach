@@ -1,9 +1,9 @@
 """
 Tutor Service — LLM exercise generation, feedback, and conversation.
 
-Provider swap (2 lines to change for final submission):
-  Dev  → Groq + llama-3.3-70b-versatile  (free, fast)
-  Prod → OpenAI + gpt-4o or gpt-5.6      (change LLM_BASE_URL + LLM_MODEL)
+Powered by OpenAI GPT-5.6. Model + key are read from environment variables
+(LLM_MODEL, LLM_API_KEY, optional LLM_BASE_URL) so the provider is swappable
+without code changes.
 
 Three functions:
   generate_exercise(level, skill_gap, chunks) → Exercise
@@ -20,12 +20,10 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-# ── Provider config — reads from env, falls back to Groq for local dev ────────
-LLM_API_KEY  = (os.environ.get("LLM_API_KEY")
-                or os.environ.get("OPENAI_API_KEY")
-                or os.environ.get("GROQ_API_KEY", ""))
-LLM_BASE_URL = os.environ.get("LLM_BASE_URL", "https://api.groq.com/openai/v1") or None
-LLM_MODEL    = os.environ.get("LLM_MODEL", "llama-3.3-70b-versatile")
+# ── Provider config — OpenAI GPT-5.6, read from environment ───────────────────
+LLM_API_KEY  = os.environ.get("LLM_API_KEY") or os.environ.get("OPENAI_API_KEY", "")
+LLM_BASE_URL = os.environ.get("LLM_BASE_URL") or None   # None → default OpenAI endpoint
+LLM_MODEL    = os.environ.get("LLM_MODEL", "gpt-5.6")
 
 # ── Client ────────────────────────────────────────────────────────────────────
 
