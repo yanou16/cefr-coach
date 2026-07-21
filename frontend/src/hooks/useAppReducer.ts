@@ -37,6 +37,7 @@ type Action =
   | { type: 'FEEDBACK_RECEIVED'; payload: FeedbackResponse }
   | { type: 'CHAT_MESSAGE'; payload: { user: string; reply: string } }
   | { type: 'GO_APP' }
+  | { type: 'GO_LANDING' }
   | { type: 'GO_CHAT' }
   | { type: 'NEXT_EXERCISE' }
   | { type: 'GO_ASSESS' }
@@ -118,6 +119,9 @@ function reducer(state: AppState, action: Action): AppState {
 
     case 'GO_APP':
       return { ...state, phase: 'assess' }
+
+    case 'GO_LANDING':
+      return { ...init, sessionId: makeSessionId() }
 
     case 'GO_CHAT':
       return { ...state, phase: 'chat' }

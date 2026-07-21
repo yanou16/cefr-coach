@@ -90,7 +90,13 @@ export default function App() {
     <>
       <nav className="nav">
         <div className="nav-in">
-          <span className="nav__brand">CEFR Coach</span>
+          <button
+            className="nav__brand"
+            onClick={() => dispatch({ type: 'GO_LANDING' })}
+            aria-label="Back to home"
+          >
+            CEFR Coach
+          </button>
           <div className="nav__right">
             <LevelBadge
               level={state.level}
