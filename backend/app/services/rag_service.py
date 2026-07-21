@@ -42,10 +42,13 @@ LEVEL_ORDER  = ["A1", "A2", "B1", "B2", "C1", "C2"]
 
 def _embedding_function():
     """
-    Always uses ChromaDB's default ONNX embedding (all-MiniLM-L6-v2).
-    Free, offline, no API cost. OpenAI API is reserved for LLM generation.
-    Must match what the persisted collection was built with.
+    Uses OpenAI text-embedding-3-small via API — no local model, no RAM overhead.
+    Falls back to the local ONNX default when OPENAI_API_KEY / LLM_API_KEY is absent.
     """
+    api_key = os.environ.get("LLM_API_KEY") or os.environ.get("OPENAI_API_KEY", "")
+    if api_key:
+        from chromadb.utils.embedding_functions import OpenAIEmbeddingFunction
+        return OpenAIEmbeddingFunction(api_key=api_key, model_name="text-embedding-3-small")
     from chromadb.utils.embedding_functions import DefaultEmbeddingFunction
     return DefaultEmbeddingFunction()
 
