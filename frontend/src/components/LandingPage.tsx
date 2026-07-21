@@ -59,7 +59,7 @@ export default function LandingPage({ onStart, theme, toggleTheme }: Props) {
     try {
       const sessionId = `demo-${Date.now()}`
       const res = await api.classifySession(demoText, sessionId)
-      setDemoResult({ level: res.level, confidence: res.confidence })
+      setDemoResult({ level: res.level ?? '', confidence: res.confidence ?? 0 })
     } catch {
       setDemoError(true)
     } finally {
