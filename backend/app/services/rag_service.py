@@ -31,7 +31,7 @@ from dotenv import load_dotenv
 load_dotenv()
 
 CORPUS_DIR   = pathlib.Path(__file__).parent.parent.parent / "corpus"
-DB_DIR       = pathlib.Path(__file__).parent.parent.parent / "chroma_db"
+DB_DIR       = pathlib.Path(os.environ.get("CHROMA_DIR", str(pathlib.Path(__file__).parent.parent.parent / "chroma_db")))
 COLLECTION   = "cefr_corpus"
 OPENAI_KEY   = os.environ.get("OPENAI_API_KEY", "")
 

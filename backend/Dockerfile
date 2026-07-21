@@ -1,16 +1,27 @@
+# HuggingFace Spaces — CEFR Coach FastAPI backend
 FROM python:3.11-slim
 
 WORKDIR /app
 
-# Install dependencies first (layer cache)
-COPY requirements.txt .
-RUN pip install --no-cache-dir -r requirements.txt
+# System deps
+RUN apt-get update && apt-get install -y --no-install-recommends \
+    build-essential curl \
+    && rm -rf /var/lib/apt/lists/*
 
-COPY . .
+# Lean prod requirements (no torch, no ragas, no langfuse)
+COPY requirements-prod.txt .
+RUN pip install --no-cache-dir -r requirements-prod.txt
 
-# Pre-download the model at build time so cold starts are fast
-RUN python -c "from app.services.level_service import _load_model; _load_model()"
+# App source + corpus
+COPY app/ ./app/
+COPY corpus/ ./corpus/
+COPY startup.sh .
+RUN chmod +x startup.sh
 
-EXPOSE 8000
+# HF Spaces persistent storage at /data
+# ChromaDB index is built there on first boot, persists across restarts
+ENV CHROMA_DIR=/data/chroma_db
 
-CMD ["uvicorn", "app.main:app", "--host", "0.0.0.0", "--port", "8000"]
+EXPOSE 7860
+
+CMD ["./startup.sh"]
