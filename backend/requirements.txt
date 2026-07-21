@@ -19,3 +19,4 @@ chromadb>=0.5.0
 # Evals (D6)
 ragas>=0.1.0
 requests>=2.32.0
+pytest>=8.0.0

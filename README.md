@@ -159,6 +159,21 @@ python evals/ragas_rag_eval.py
 
 ---
 
+## Testing
+
+Unit tests cover the pure classifier-service logic: HuggingFace Space response parsing, word-count validation, and the rolling-window `LearnerLevelTracker`.
+
+Run them from the backend directory:
+
+```bash
+cd backend
+pytest tests/test_level_service.py
+```
+
+These tests do not call the HuggingFace Space or GPT-5.6. They are deterministic and safe to run in CI.
+
+---
+
 ## Quick Start (local dev)
 
 ### Prerequisites
