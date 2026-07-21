@@ -1,0 +1,117 @@
+<svg viewBox="0 0 920 620" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <filter id="sk" x="-3%" y="-3%" width="106%" height="106%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04 0.04" numOctaves="3" seed="9" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.3" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#475569"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="620" fill="#FFFDF5" rx="14"/>
+
+  <text x="460" y="38" text-anchor="middle" font-size="20" font-weight="700" fill="#12132a" letter-spacing="-0.3">How Ragas evaluates the RAG (my notes)</text>
+  <text x="460" y="60" text-anchor="middle" font-size="12.5" fill="#6b7280">Ragas = a framework that grades a RAG system automatically, using an LLM as the judge</text>
+
+  <!-- ═══ TOP: the flow with a concrete example ═══ -->
+  <text x="30" y="92" font-size="10" font-weight="700" fill="#999" letter-spacing="1.6">STEP 1 — RUN ONE TEST CASE THROUGH THE RAG</text>
+  <line x1="30" y1="96" x2="890" y2="96" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Question box -->
+  <g filter="url(#sk)">
+    <rect x="30" y="108" width="200" height="92" rx="9" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  </g>
+  <text x="130" y="130" text-anchor="middle" font-size="12" font-weight="700" fill="#1d4ed8">1 · Question</text>
+  <text x="130" y="150" text-anchor="middle" font-size="9.5" fill="#3730a3">"What's the difference</text>
+  <text x="130" y="163" text-anchor="middle" font-size="9.5" fill="#3730a3">between 'a' and 'an'?"</text>
+  <text x="130" y="186" text-anchor="middle" font-size="9" fill="#6b7280" font-style="italic">+ a ground-truth answer</text>
+
+  <line x1="232" y1="154" x2="262" y2="154" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Retrieve box -->
+  <g filter="url(#sk)">
+    <rect x="264" y="108" width="200" height="92" rx="9" fill="#ecfeff" stroke="#0891b2" stroke-width="2"/>
+  </g>
+  <text x="364" y="130" text-anchor="middle" font-size="12" font-weight="700" fill="#0e7490">2 · Retrieve</text>
+  <text x="364" y="150" text-anchor="middle" font-size="9.5" fill="#155e75">ChromaDB returns the</text>
+  <text x="364" y="163" text-anchor="middle" font-size="9.5" fill="#155e75">top matching chunks</text>
+  <text x="364" y="186" text-anchor="middle" font-size="9" fill="#6b7280" font-style="italic">= the "context"</text>
+
+  <line x1="466" y1="154" x2="496" y2="154" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Answer box -->
+  <g filter="url(#sk)">
+    <rect x="498" y="108" width="200" height="92" rx="9" fill="#fdf4ff" stroke="#a855f7" stroke-width="2"/>
+  </g>
+  <text x="598" y="130" text-anchor="middle" font-size="12" font-weight="700" fill="#7e22ce">3 · Answer</text>
+  <text x="598" y="150" text-anchor="middle" font-size="9.5" fill="#6b21a8">"Use 'a' before consonant</text>
+  <text x="598" y="163" text-anchor="middle" font-size="9.5" fill="#6b21a8">sounds, 'an' before vowels"</text>
+  <text x="598" y="186" text-anchor="middle" font-size="9" fill="#6b7280" font-style="italic">generated from context</text>
+
+  <line x1="700" y1="154" x2="730" y2="154" stroke="#475569" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- Judge box -->
+  <g filter="url(#sk)">
+    <rect x="732" y="108" width="158" height="92" rx="9" fill="#12132a" stroke="#22d98a" stroke-width="2"/>
+  </g>
+  <text x="811" y="132" text-anchor="middle" font-size="12" font-weight="700" fill="#22d98a">4 · Judge</text>
+  <text x="811" y="152" text-anchor="middle" font-size="9.5" fill="#e5e7eb">GPT-5.6 scores</text>
+  <text x="811" y="165" text-anchor="middle" font-size="9.5" fill="#e5e7eb">the 4 metrics</text>
+  <text x="811" y="186" text-anchor="middle" font-size="9" fill="#9ca3af" font-style="italic">0.0 → 1.0 each</text>
+
+  <!-- ═══ BOTTOM: the 4 metrics explained ═══ -->
+  <text x="30" y="238" font-size="10" font-weight="700" fill="#999" letter-spacing="1.6">STEP 2 — THE 4 METRICS (what each one catches)</text>
+  <line x1="30" y1="242" x2="890" y2="242" stroke="#e5e7eb" stroke-width="1"/>
+
+  <!-- Metric 1: faithfulness -->
+  <g filter="url(#sk)">
+    <rect x="30" y="256" width="420" height="150" rx="10" fill="#f0fdf4" stroke="#16a34a" stroke-width="2"/>
+  </g>
+  <text x="48" y="282" font-size="14" font-weight="700" fill="#14532d">faithfulness</text>
+  <text x="48" y="303" font-size="11" fill="#166534">Does the answer stick to the retrieved context,</text>
+  <text x="48" y="319" font-size="11" fill="#166534">or did the model make things up (hallucinate)?</text>
+  <rect x="48" y="332" width="384" height="58" rx="7" fill="#fff" stroke="#16a34a" stroke-width="1.2"/>
+  <text x="60" y="352" font-size="10" fill="#14532d" font-weight="700">High = answer only uses facts from the chunks.</text>
+  <text x="60" y="368" font-size="10" fill="#166534">Low  = answer invents info not in the context.</text>
+  <text x="60" y="383" font-size="9.5" fill="#6b7280" font-style="italic">→ catches hallucination</text>
+
+  <!-- Metric 2: answer_relevancy -->
+  <g filter="url(#sk)">
+    <rect x="470" y="256" width="420" height="150" rx="10" fill="#eff6ff" stroke="#3b82f6" stroke-width="2"/>
+  </g>
+  <text x="488" y="282" font-size="14" font-weight="700" fill="#1d4ed8">answer_relevancy</text>
+  <text x="488" y="303" font-size="11" fill="#3730a3">Does the answer actually address the question</text>
+  <text x="488" y="319" font-size="11" fill="#3730a3">that was asked — or does it drift off-topic?</text>
+  <rect x="488" y="332" width="384" height="58" rx="7" fill="#fff" stroke="#3b82f6" stroke-width="1.2"/>
+  <text x="500" y="352" font-size="10" fill="#1d4ed8" font-weight="700">High = directly answers the question.</text>
+  <text x="500" y="368" font-size="10" fill="#3730a3">Low  = vague, or answers a different question.</text>
+  <text x="500" y="383" font-size="9.5" fill="#6b7280" font-style="italic">→ catches off-topic answers</text>
+
+  <!-- Metric 3: context_precision -->
+  <g filter="url(#sk)">
+    <rect x="30" y="418" width="420" height="150" rx="10" fill="#fff7ed" stroke="#ea580c" stroke-width="2"/>
+  </g>
+  <text x="48" y="444" font-size="14" font-weight="700" fill="#9a3412">context_precision</text>
+  <text x="48" y="465" font-size="11" fill="#7c2d12">Of the chunks we retrieved, how many are</text>
+  <text x="48" y="481" font-size="11" fill="#7c2d12">actually relevant? (not noise / filler)</text>
+  <rect x="48" y="494" width="384" height="58" rx="7" fill="#fff" stroke="#ea580c" stroke-width="1.2"/>
+  <text x="60" y="514" font-size="10" fill="#9a3412" font-weight="700">High = retrieved chunks are on-point.</text>
+  <text x="60" y="530" font-size="10" fill="#7c2d12">Low  = lots of irrelevant chunks pulled in.</text>
+  <text x="60" y="545" font-size="9.5" fill="#6b7280" font-style="italic">→ measures retrieval quality</text>
+
+  <!-- Metric 4: context_recall -->
+  <g filter="url(#sk)">
+    <rect x="470" y="418" width="420" height="150" rx="10" fill="#faf5ff" stroke="#9333ea" stroke-width="2"/>
+  </g>
+  <text x="488" y="444" font-size="14" font-weight="700" fill="#7e22ce">context_recall</text>
+  <text x="488" y="465" font-size="11" fill="#6b21a8">Did we retrieve everything needed to answer,</text>
+  <text x="488" y="481" font-size="11" fill="#6b21a8">or did we miss important chunks?</text>
+  <rect x="488" y="494" width="384" height="58" rx="7" fill="#fff" stroke="#9333ea" stroke-width="1.2"/>
+  <text x="500" y="514" font-size="10" fill="#7e22ce" font-weight="700">High = nothing important was missed.</text>
+  <text x="500" y="530" font-size="10" fill="#6b21a8">Low  = key info was not retrieved.</text>
+  <text x="500" y="545" font-size="9.5" fill="#6b7280" font-style="italic">→ measures retrieval coverage</text>
+
+  <!-- memory hook -->
+  <text x="460" y="596" text-anchor="middle" font-size="11.5" font-style="italic" fill="#374151">Precision + Recall = "did we fetch the RIGHT chunks, and ALL of them?"  ·  Faithfulness + Relevancy = "is the ANSWER good?"</text>
+</svg>

@@ -1,0 +1,94 @@
+<svg viewBox="0 0 920 500" xmlns="http://www.w3.org/2000/svg" font-family="'Segoe UI','Helvetica Neue',Arial,sans-serif">
+  <defs>
+    <filter id="sk" x="-3%" y="-3%" width="106%" height="106%">
+      <feTurbulence type="fractalNoise" baseFrequency="0.04 0.04" numOctaves="3" seed="5" result="n"/>
+      <feDisplacementMap in="SourceGraphic" in2="n" scale="1.4" xChannelSelector="R" yChannelSelector="G"/>
+    </filter>
+    <marker id="arr" markerWidth="8" markerHeight="6" refX="7" refY="3" orient="auto">
+      <path d="M0,0 L8,3 L0,6 Z" fill="#1e1e2e"/>
+    </marker>
+  </defs>
+
+  <rect width="920" height="500" fill="#FFFDF5" rx="14"/>
+
+  <!-- Title -->
+  <text x="460" y="40" text-anchor="middle" font-size="20" font-weight="700" fill="#12132a" letter-spacing="-0.3">Automated Evals — I can prove every part works</text>
+  <text x="460" y="64" text-anchor="middle" font-size="13" fill="#6b7280">2 evaluation suites · 25 tests total · reproducible on every deploy</text>
+
+  <!-- Big number banner -->
+  <g filter="url(#sk)">
+    <rect x="360" y="86" width="200" height="58" rx="10" fill="#12132a"/>
+  </g>
+  <text x="460" y="123" text-anchor="middle" font-size="26" font-weight="700" fill="#22d98a">25 tests</text>
+
+  <!-- Split arrows down -->
+  <line x1="420" y1="146" x2="250" y2="182" stroke="#1e1e2e" stroke-width="2" marker-end="url(#arr)"/>
+  <line x1="500" y1="146" x2="670" y2="182" stroke="#1e1e2e" stroke-width="2" marker-end="url(#arr)"/>
+
+  <!-- ═══ LEFT: Classifier probes ═══ -->
+  <g filter="url(#sk)">
+    <rect x="48" y="186" width="380" height="270" rx="12" fill="#fff7ed" stroke="#ea580c" stroke-width="2.5"/>
+  </g>
+  <text x="238" y="216" text-anchor="middle" font-size="15" font-weight="700" fill="#9a3412">Suite 1 · Classifier Probes</text>
+  <text x="238" y="237" text-anchor="middle" font-size="12" fill="#7c2d12">"Does it detect the right CEFR level?"</text>
+
+  <!-- 12 badge -->
+  <g filter="url(#sk)">
+    <rect x="188" y="250" width="100" height="42" rx="8" fill="#ea580c"/>
+  </g>
+  <text x="238" y="278" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">12 tests</text>
+
+  <!-- 2 per level grid -->
+  <text x="238" y="314" text-anchor="middle" font-size="11" fill="#7c2d12">2 fixed texts per level:</text>
+  <g font-size="11" font-weight="700">
+    <rect x="70" y="326" width="52" height="26" rx="6" fill="#60b8d8"/><text x="96" y="344" text-anchor="middle" fill="#072535">A1 ×2</text>
+    <rect x="128" y="326" width="52" height="26" rx="6" fill="#4ec98a"/><text x="154" y="344" text-anchor="middle" fill="#063a22">A2 ×2</text>
+    <rect x="186" y="326" width="52" height="26" rx="6" fill="#e8c840"/><text x="212" y="344" text-anchor="middle" fill="#2e2400">B1 ×2</text>
+    <rect x="244" y="326" width="52" height="26" rx="6" fill="#f09050"/><text x="270" y="344" text-anchor="middle" fill="#3a1200">B2 ×2</text>
+    <rect x="302" y="326" width="52" height="26" rx="6" fill="#e06060"/><text x="328" y="344" text-anchor="middle" fill="#3a0000">C1 ×2</text>
+    <rect x="360" y="326" width="52" height="26" rx="6" fill="#b080f0"/><text x="386" y="344" text-anchor="middle" fill="#1e0840">C2 ×2</text>
+  </g>
+
+  <!-- how -->
+  <text x="238" y="382" text-anchor="middle" font-size="11" fill="#7c2d12">predicted level  ==  expected level ?</text>
+  <g filter="url(#sk)">
+    <rect x="98" y="396" width="280" height="44" rx="8" fill="#fff" stroke="#ea580c" stroke-width="1.5"/>
+  </g>
+  <text x="238" y="416" text-anchor="middle" font-size="11" fill="#9a3412">✓ pass → exit 0   ✗ fail → exit 1</text>
+  <text x="238" y="431" text-anchor="middle" font-size="10" fill="#7c2d12">runs against the live /classify endpoint</text>
+
+  <!-- ═══ RIGHT: Ragas ═══ -->
+  <g filter="url(#sk)">
+    <rect x="492" y="186" width="380" height="270" rx="12" fill="#faf5ff" stroke="#9333ea" stroke-width="2.5"/>
+  </g>
+  <text x="682" y="216" text-anchor="middle" font-size="15" font-weight="700" fill="#7e22ce">Suite 2 · RAG Quality (Ragas)</text>
+  <text x="682" y="237" text-anchor="middle" font-size="12" fill="#6b21a8">"Does the RAG retrieve good content?"</text>
+
+  <!-- 13 badge -->
+  <g filter="url(#sk)">
+    <rect x="632" y="250" width="100" height="42" rx="8" fill="#9333ea"/>
+  </g>
+  <text x="682" y="278" text-anchor="middle" font-size="20" font-weight="700" fill="#fff">13 tests</text>
+
+  <text x="682" y="314" text-anchor="middle" font-size="11" fill="#6b21a8">scored on 4 metrics by an LLM judge:</text>
+
+  <!-- 4 metrics -->
+  <g font-size="10.5">
+    <rect x="512" y="326" width="170" height="30" rx="6" fill="#fff" stroke="#9333ea" stroke-width="1.3"/>
+    <text x="524" y="345" fill="#6b21a8" font-weight="700">faithfulness</text>
+    <rect x="692" y="326" width="170" height="30" rx="6" fill="#fff" stroke="#9333ea" stroke-width="1.3"/>
+    <text x="704" y="345" fill="#6b21a8" font-weight="700">answer_relevancy</text>
+    <rect x="512" y="362" width="170" height="30" rx="6" fill="#fff" stroke="#9333ea" stroke-width="1.3"/>
+    <text x="524" y="381" fill="#6b21a8" font-weight="700">context_precision</text>
+    <rect x="692" y="362" width="170" height="30" rx="6" fill="#fff" stroke="#9333ea" stroke-width="1.3"/>
+    <text x="704" y="381" fill="#6b21a8" font-weight="700">context_recall</text>
+  </g>
+
+  <g filter="url(#sk)">
+    <rect x="542" y="404" width="280" height="36" rx="8" fill="#fff" stroke="#9333ea" stroke-width="1.5"/>
+  </g>
+  <text x="682" y="427" text-anchor="middle" font-size="10.5" fill="#7e22ce">results saved to evals/ragas_results.json</text>
+
+  <!-- Footer takeaway -->
+  <text x="460" y="482" text-anchor="middle" font-size="12.5" font-style="italic" fill="#374151">Each part of the pipeline is measured separately — no guesswork, fully reproducible.</text>
+</svg>
