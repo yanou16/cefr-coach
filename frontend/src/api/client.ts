@@ -1,5 +1,14 @@
 const BASE = import.meta.env.VITE_API_URL ?? 'http://localhost:8001'
 
+function errorMessage(detail: unknown, status: number): string {
+  if (typeof detail === 'string') return detail
+  if (detail && typeof detail === 'object') {
+    const d = detail as { message?: string; error?: string }
+    return d.message ?? d.error ?? `HTTP ${status}`
+  }
+  return `HTTP ${status}`
+}
+
 async function post<T>(path: string, body: unknown): Promise<T> {
   const r = await fetch(`${BASE}${path}`, {
     method: 'POST',
@@ -7,14 +16,14 @@ async function post<T>(path: string, body: unknown): Promise<T> {
     body: JSON.stringify(body),
   })
   const json = await r.json()
-  if (!r.ok) throw new Error(json.detail ?? `HTTP ${r.status}`)
+  if (!r.ok) throw new Error(errorMessage(json.detail, r.status))
   return json as T
 }
 
 async function get<T>(path: string): Promise<T> {
   const r = await fetch(`${BASE}${path}`)
   const json = await r.json()
-  if (!r.ok) throw new Error(json.detail ?? `HTTP ${r.status}`)
+  if (!r.ok) throw new Error(errorMessage(json.detail, r.status))
   return json as T
 }
 
@@ -116,8 +125,18 @@ export const api = {
   generateExercise: (sessionId: string, skillGap = 'general grammar') =>
     post<ExerciseResponse>('/exercise', { session_id: sessionId, skill_gap: skillGap }),
 
-  submitFeedback: (sessionId: string, learnerAnswer: string) =>
-    post<FeedbackResponse>('/feedback', { session_id: sessionId, learner_answer: learnerAnswer }),
+  submitFeedback: (
+    sessionId: string,
+    learnerAnswer: string,
+    exercise?: Exercise | null,
+    level?: string | null,
+  ) =>
+    post<FeedbackResponse>('/feedback', {
+      session_id: sessionId,
+      learner_answer: learnerAnswer,
+      exercise: exercise ?? undefined,
+      level: level ?? undefined,
+    }),
 
   chat: (sessionId: string, message: string) =>
     post<ChatResponse>('/chat', { session_id: sessionId, message }),

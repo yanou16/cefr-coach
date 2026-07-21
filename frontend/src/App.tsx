@@ -53,12 +53,12 @@ export default function App() {
   const handleAnswer = useCallback(async (answer: string) => {
     dispatch({ type: 'SET_LOADING', payload: true })
     try {
-      const result = await api.submitFeedback(state.sessionId, answer)
+      const result = await api.submitFeedback(state.sessionId, answer, state.exercise, state.level)
       dispatch({ type: 'FEEDBACK_RECEIVED', payload: result })
     } catch (e) {
       dispatch({ type: 'SET_ERROR', payload: (e as Error).message })
     }
-  }, [state.sessionId, dispatch])
+  }, [state.sessionId, state.exercise, state.level, dispatch])
 
   const handleChat = useCallback(async (msg: string) => {
     dispatch({ type: 'SET_LOADING', payload: true })

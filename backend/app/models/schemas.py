@@ -76,6 +76,9 @@ class ExerciseRequest(BaseModel):
 class FeedbackRequest(BaseModel):
     session_id:     str = Field(..., description="Learner session ID")
     learner_answer: str = Field(..., min_length=1, max_length=3000)
+    # Fallbacks used if the in-memory session was lost (e.g. free-tier restart)
+    exercise:       dict | None = Field(default=None, description="Client copy of the current exercise")
+    level:          str  | None = Field(default=None, description="Client copy of the learner level")
 
 
 class ChatRequest(BaseModel):

@@ -301,6 +301,12 @@ def feedback_endpoint(request: FeedbackRequest):
     """
     session = get_session(request.session_id)
 
+    # Recover from a lost in-memory session (free-tier restart) using client copies
+    if session.current_exercise is None and request.exercise is not None:
+        session.current_exercise = request.exercise
+    if session.level is None and request.level is not None:
+        session.level = request.level
+
     if session.current_exercise is None:
         raise HTTPException(
             status_code=400,
